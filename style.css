@@ -1,0 +1,86 @@
+/* 
+    - Style page for all the front end team pages
+    - We will link this single page to all the other pages we are making
+    - This is the only stylesheet used in our project
+
+    - **** ACTION ITEMS  ****
+    - Bootstrap?  Is that something worth exploring?
+        -  What are we doing?
+    - What other things do we want to with displaying data?
+        -  What are we doing? 
+    - How are we going to make graphs (if necessary) Maybe SVG or something like that?
+        -  What are we doing?
+    - Connect to the cloud instance.
+        -  What are we doing?
+    - Accessibility, come up with a list of needs, send them to client (Salib and Salman)
+        -  What are we doing?
+
+
+        
+*/
+
+
+
+
+
+
+
+/* H1 style for all pages */
+h1{
+    color: red;
+    background-color: black;
+    padding-left: 15px;
+}
+
+/* H2 style for all pages */
+h2{
+    background-color: navy;
+    color: white;
+    padding-left: 15px;
+}
+
+/* H3 style for all pages */
+h3{
+    background-color: navy;
+    color: aquamarine;
+    padding-left: 15px;
+}
+
+/* p style for all pages */
+p{
+    background-color: black;
+    color: fuchsia;
+    padding-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+/* ul style for all pages */
+ul{
+    background-color: purple;
+    color: gold;
+    padding-left: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+/* ol style for all pages */
+ol{
+    background-color: red;
+    color: black;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+/* Menu styling (we can use Bootstrap if we want) */
+
+/* Body styling, this is the main page styling
+    - do we want to have a light mode or a dark mode theme?
+    - do we want to have floating panes or like the wearther channel
+    or do we want a basic webpage?
+    - what color will the background and the main font be,
+    do we want to switch it up per attribute or have a blamket style?
+
+*/
+
