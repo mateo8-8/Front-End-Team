@@ -1,5 +1,6 @@
 <?php
 include "database.php";
+session_start();
 
 // Check user login or not
 if(!isset($_SESSION['uname'])){
