@@ -11,7 +11,7 @@ if(!isset($_POST['but_submit'])){
 	<body>
 		<center>
 			<div class="container">
-				<form method="post" action="">
+				<form method="post" action="login.php">
 					<div id="div_login">
 						<h1>Login</h1>
 						<div>
