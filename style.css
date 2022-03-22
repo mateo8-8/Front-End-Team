@@ -14,40 +14,39 @@
         -  What are we doing?
     - Accessibility, come up with a list of needs, send them to client (Salib and Salman)
         -  What are we doing?
-
-
-        
 */
 
 
-
-
-
-
-
 /* H1 style for all pages */
-h1{
+
+h1 {
     color: red;
     background-color: black;
     padding-left: 15px;
 }
 
+
 /* H2 style for all pages */
-h2{
+
+h2 {
     background-color: navy;
     color: white;
     padding-left: 15px;
 }
 
+
 /* H3 style for all pages */
-h3{
+
+h3 {
     background-color: navy;
     color: aquamarine;
     padding-left: 15px;
 }
 
+
 /* p style for all pages */
-p{
+
+p {
     background-color: black;
     color: fuchsia;
     padding-left: 15px;
@@ -55,8 +54,10 @@ p{
     font-weight: 600;
 }
 
+
 /* ul style for all pages */
-ul{
+
+ul {
     background-color: purple;
     color: gold;
     padding-left: 15px;
@@ -64,8 +65,10 @@ ul{
     font-weight: lighter;
 }
 
+
 /* ol style for all pages */
-ol{
+
+ol {
     background-color: red;
     color: black;
     padding-left: 15px;
@@ -73,7 +76,9 @@ ol{
     font-weight: 300;
 }
 
+
 /* Menu styling (we can use Bootstrap if we want) */
+
 
 /* Body styling, this is the main page styling
     - do we want to have a light mode or a dark mode theme?
@@ -83,4 +88,3 @@ ol{
     do we want to switch it up per attribute or have a blamket style?
 
 */
-
