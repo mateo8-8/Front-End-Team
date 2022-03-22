@@ -49,9 +49,9 @@ if(!isset($_POST['but_submit'])){
 <?php
 }
 	require('database.php');
-
+	
 	if(isset($_POST['but_submit'])){
-
+	session_start();
     $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
     $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
 
