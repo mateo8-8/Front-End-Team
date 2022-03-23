@@ -4,7 +4,7 @@ require('database.php');
 
 $username = strtolower(readline("Enter username: "));
 $password1 = readline("Enter a password: ");
-$password2 - readline("Verify your password: ");
+$password2 = readline("Verify your password: ");
 
 if($password1 == $password2){
 	$hash = password_hash($password1, PASSWORD_DEFAULT);
