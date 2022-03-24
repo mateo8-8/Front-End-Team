@@ -58,7 +58,7 @@ if(!isset($_POST['but_submit'])){
     	$stms = $con->prepare("SELECT password FROM USER WHERE user = ?");
 			$stms->bind_param("s", $username);
 			$stms->execute();
-		$stms->bind_results($password);
+		$stms->bind_result($password);
 
 		if($stms->fetch() && password_verify($password, $hash)){
 			$_SESSION['uname'] = $uname;
