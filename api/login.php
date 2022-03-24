@@ -27,7 +27,7 @@ if(!isset($_POST['but_submit'])){
 							<input
 								type="password"
 								class="textbox"
-								id="txt_uname"
+								id="txt_pwd"
 								name="txt_pwd"
 								placeholder="Password"
 							/>
