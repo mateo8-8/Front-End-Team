@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Login</title>
 
     <style>
         #nav {
@@ -39,20 +39,17 @@
 </head>
 
 <body>
-    <!--     <p><a href="search.html">Search</a></p>
-    <p><a href="about.html">About</a></p>
-    <p><a href="contact.html">Contact</a></p>
-    <p><a href="history.html">History</a></p> -->
-
     <ul id="nav">
         <li><a class="active" href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="search.html">Search</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.php">Login</a></li>
+        <li><a href="login.html">Login</a></li>
     </ul>
 
-    <h2>Home</h2>
+    <h2>Login</h2>
+
+    <?php include 'index.php';?>
 </body>
 
 </html>
