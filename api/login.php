@@ -55,22 +55,18 @@ if(!isset($_POST['but_submit'])){
     $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
     $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
 
-    if ($uname != "" && $password != ""){
+    	$stms = $con->prepare("SELECT password FROM USER WHERE user = ?");
+			$stms->bind_param("s", $username);
+			$stms->execute();
+		$stms->bind_results($password);
 
-        $sql_query = "select count(*) as cntUser from USER where user='".$uname."' and password='".$password."'";
-        $result = mysqli_query($con,$sql_query);
-        $row = mysqli_fetch_array($result);
-
-        $count = $row['cntUser'];
-
-        if($count > 0){
-            $_SESSION['uname'] = $uname;
+		if($stms->fetch() && password_verify($password, $hash)){
+			$_SESSION['uname'] = $uname;
             header('Location: home.php');
-        }else{
+		} else{
             echo "Invalid username and password";
         }
 
     }
-}
 
 ?>
