@@ -1,5 +1,5 @@
 CREATE TABLE MEASURMENT
-(measurementID int,
+(measurementID int NOT NULL AUTO_INCREMENT,
 Temperature int,
 Humidity double,
 CO2 double,
