@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
 
+    <title>Home</title>
     <style>
         #nav {
             list-style-type: none;
@@ -35,21 +35,31 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        
+        div {
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
     <ul id="nav">
-        <li><a class="active" href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="search.html">Search</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a class="active" href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Search.html">Search</a></li>
+        <li><a href="Map.html">Map</a></li>
+        <li><a href="Chart.html">Chart</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Login.html">Login</a></li>
     </ul>
 
-    <h2>Login</h2>
+    <h2>Map</h2>
 
-    <?php include 'index.php';?>
+    <div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1O_uBUObOuYCYeF8UDwLdnCFL7S1bzQjF&ehbc=2E312F" width="1000" height="600"></iframe>
+    </div>
 </body>
 
 </html>
