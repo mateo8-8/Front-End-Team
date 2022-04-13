@@ -68,7 +68,15 @@ if(isset($_POST['but_submit'])){
 		$_SESSION['uname'] = $uname;
         header('Location: home.php');
 	} else{
-        echo "Invalid username and password";
+        echo '<script type="text/javascript"> 
+		
+
+		var notification = new Notification("Wildfire Detection", {
+            body : \'Your node is offline\',
+        });
+        
+        setTimeout(function() { notification.close(); }, 5000);
+		</script>';
     }
 }
 ?>
