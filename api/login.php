@@ -68,37 +68,6 @@ if(isset($_POST['but_submit'])){
 		$_SESSION['uname'] = $uname;
         header('Location: home.php');
 	} else{
-		echo '<script type="text/javascript">
-var notificationsEnabled = false;
-
-function initNotifications() {
-    if (window.Notification) {
-        Notification.requestPermission(function(permission) {
-            if (permission === \'granted\') {
-                notificationsEnabled = true;
-            } else {
-                alert("You denied Notifications, its so sad");
-            }
-        });
-    } else {
-        alert("Your browser doesn\'t support Notifications API");
-    }
-}
-
-function showNotification() {
-    if (notificationsEnabled) {
-        var notification = new Notification("Wildfire Detection", {
-            body : \'Your node is offline\',
-        });
-        
-        setTimeout(function() { notification.close(); }, 5000);
-        console.log("Worked");
-    } else {
-        alert("Notifications are disabled");
-    }
-}
-</script>'
-		showNotification();
         echo "Invalid username and password";
     }
 }
