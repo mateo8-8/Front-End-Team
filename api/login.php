@@ -79,7 +79,5 @@ if(isset($_POST['but_submit'])){
 		</script>';
 
     }
-} else {
-	header('Location: login.php');
 }
 ?>
