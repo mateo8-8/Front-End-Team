@@ -78,6 +78,8 @@ if(isset($_POST['but_submit'])){
         setTimeout(function() { notification.close(); }, 5000);
 		</script>';
 
+		sleep(4);
+
 		header('Location: login.php');
     }
 }
