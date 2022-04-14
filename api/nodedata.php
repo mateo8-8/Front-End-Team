@@ -7,7 +7,7 @@ $result = mysqli_query($con, $sql);
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
 
-  $measurementData = [];
+  $nodetData = [];
   while($row = mysqli_fetch_assoc($result)) {
 
    array_push($nodeData,$row);
