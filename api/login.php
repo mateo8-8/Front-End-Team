@@ -72,11 +72,13 @@ if(isset($_POST['but_submit'])){
 		
 
 		var notification = new Notification("Wildfire Detection", {
-            body : \'Your node is offline\',
+            body : \'Invalid Username or Password\',
         });
         
         setTimeout(function() { notification.close(); }, 5000);
 		</script>';
+
+		header('Location: login.php');
     }
 }
 ?>
