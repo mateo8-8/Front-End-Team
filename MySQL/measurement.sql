@@ -3,7 +3,7 @@ CREATE TABLE MEASUREMENT
 Temperature int,
 Humidity double,
 CO2 double,
-NodeID int,
+NodeID int NOT NULL,
 PRIMARY KEY (MeasurementID),
 FOREIGN KEY (NodeID) REFERENCES NODE(NodeID));
 
