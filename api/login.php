@@ -73,6 +73,7 @@ if(isset($_POST['but_submit'])){
 
 		var notification = new Notification("Wildfire Detection", {
             body : \'Invalid Username or Password\',
+			icon: \'https://313wildfire.com/Front-End-Team/api/SadFace.png\',
         });
         
         setTimeout(function() { notification.close(); }, 5000);
