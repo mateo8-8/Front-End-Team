@@ -5,8 +5,7 @@ Humidity double,
 CO2 double,
 NodeID int,
 PRIMARY KEY (measurementID)),
-FOREIGN KEY (NodeID) REFERENCES NODE(NodeID)
-;
+FOREIGN KEY (NodeID) REFERENCES NODE(NodeID);
 
 INSERT INTO MEASUREMENT (Temperature, Humidity, CO2, NodeID) VALUES (72, 2.2, 9.9, 1);
 INSERT INTO MEASUREMENT (Temperature, Humidity, CO2, NodeID) VALUES (84, 6.8, 5.1, 1);
