@@ -2,12 +2,6 @@
 include "database.php";
 session_start();
 
-$to_email_address = 'atkinschadt@gmail.com';
-$subject = 'First Message';
-$message = 'Hello there';
-
-mail($to_email_address,$subject,$message);
-
 
 // Check user login or not
 if(!isset($_SESSION['uname'])){
@@ -17,7 +11,7 @@ if(!isset($_SESSION['uname'])){
 // logout
 if(isset($_POST['but_logout'])){
     session_destroy();
-    header('Location: index.php');
+    header('Location: login.php');
 }
 
 // Notification
