@@ -76,6 +76,8 @@ if(isset($_POST['but_submit'])){
         });
         
         setTimeout(function() { notification.close(); }, 5000);
+
+		window.location = "https://313wildfire.com/Front-End-Team/api/login.php";
 		</script>';
 
     }
