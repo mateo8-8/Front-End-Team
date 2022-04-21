@@ -4,15 +4,15 @@ session_start();
 
 
 // Check user login or not
-if (!isset($_SESSION['uname'])) {
-    header('Location: index.php');
-}
+//if (!isset($_SESSION['uname'])) {
+//    header('Location: index.php');
+//}
 
 // logout
-if (isset($_POST['but_logout'])) {
-    session_destroy();
-    header('Location: login.php');
-}
+//if (isset($_POST['but_logout'])) {
+//    session_destroy();
+//    header('Location: login.php');
+//}
 
 // Notification
 echo '<script type="text/javascript">
