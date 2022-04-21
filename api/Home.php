@@ -155,7 +155,7 @@ function showNotification() {
             <input type="text" placeholder="Enter The City" id="city">
             <button id="submit">Submit</button>
 
-            <h1 id="name">Location: </h1>
+            <h1 id="name"></h1>
 
             <label for="longitude">Longitude: </label>
             <input type="text" id="longitude" name="longitude">
