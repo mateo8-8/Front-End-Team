@@ -8,20 +8,18 @@
 <body>
     <h1>Subscribtion</h1>
 
-        <?php
-        echo 'sedfgsdfgsdgf';
-
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // collect value of input field
-            $email = $_POST['mail'];
-            if (empty($email)) {
-                echo "Name is empty";
-            } else {
-                echo $email;
-            }
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // collect value of input field
+        $email = $_POST['mail'];
+        if (empty($email)) {
+            echo "Name is empty";
+        } else {
+            echo $email;
         }
+    }
 
-        /*         // servername => localhost
+    /*         // servername => localhost
         // username => checkout
         // password => checkout
         // database name => checkout
@@ -58,7 +56,7 @@
 
         // Close connection
         mysqli_close($conn); */
-        ?>
+    ?>
 </body>
 
 </html>
