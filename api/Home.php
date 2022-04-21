@@ -124,6 +124,13 @@ function showNotification() {
             flex: 65%;
             padding: 15px;
         }
+
+        #name {
+            width: auto;
+            height: 45px;
+            background-color: #bbb;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -143,11 +150,6 @@ function showNotification() {
         <p>Please enter your email address in the textbox.</p>
 
         <?php include 'Email.php' ?>
-
-        <!--         <form action="subscribe.php" method="post">
-            <input type="text" placeholder="Email address" name="mail">
-            <button id="subscribe" onclick="pop()">Subscribe</button>
-        </form> -->
     </div>
 
     <div class="right" style="background-color:#ddd;">
@@ -197,10 +199,6 @@ function showNotification() {
                 })
                 .catch(err => alert("Wrong City Name! Try Again!"));
         })
-
-        //function pop() {
-        //    alert("Thank You For Subscribe To Our Alarm System")
-        //}
     </script>
 </body>
 
