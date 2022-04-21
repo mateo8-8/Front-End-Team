@@ -142,10 +142,12 @@ function showNotification() {
         <p>If you wish to get notification through email when the fire level went over the risk factor.</p>
         <p>Please enter your email address in the textbox.</p>
 
-        <form action="subscribe.php" method="post">
+        <?php include 'index.php'; ?>
+
+<!--         <form action="subscribe.php" method="post">
             <input type="text" placeholder="Email address" name="mail">
             <button id="subscribe" onclick="pop()">Subscribe</button>
-        </form>
+        </form> -->
     </div>
 
     <div class="right" style="background-color:#ddd;">
