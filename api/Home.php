@@ -128,7 +128,7 @@ function showNotification() {
         #name {
             width: auto;
             height: 45px;
-            background-color: #bbb;
+            background-color: #ddd;
             text-align: center;
         }
     </style>
