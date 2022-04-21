@@ -143,10 +143,10 @@ function showNotification() {
         <p>Please enter your email address in the textbox.</p>
 
 
-<!--         <form action="subscribe.php" method="post">
+        <form action="subscribe.php" method="post">
             <input type="text" placeholder="Email address" name="mail">
             <button id="subscribe" onclick="pop()">Subscribe</button>
-        </form> -->
+        </form>
     </div>
 
     <div class="right" style="background-color:#ddd;">
