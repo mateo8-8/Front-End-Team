@@ -2,10 +2,12 @@
 <html>
 
 <head>
-    <title>Insert Data Page</title>
+    <title>Subscribtion</title>
 </head>
 
 <body>
+    <h1>Subscribtion</h1>
+
     <center>
         <?php
 

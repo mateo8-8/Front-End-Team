@@ -6,9 +6,11 @@
 </head>
 
 <body>
-    <form action="subscribe.php" method="GET">
+    <form action="subscribe.php" method="POST">
         <input type="text" placeholder="Email address" name="mail">
-        <button id="subscribe" onclick="pop()">Subscribe</button>
+        <button id="subscribe">Subscribe</button>
+        <!--         <button id="subscribe" onclick="pop()">Subscribe</button>
+ -->
         <!--             <p>
                 <label for="uName">User Name: </label>
                 <input type="text" name="u_name" id="userName">

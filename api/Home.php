@@ -198,9 +198,9 @@ function showNotification() {
                 .catch(err => alert("Wrong City Name! Try Again!"));
         })
 
-        function pop() {
-            alert("Thank You For Subscribe To Our Alarm System")
-        }
+        //function pop() {
+        //    alert("Thank You For Subscribe To Our Alarm System")
+        //}
     </script>
 </body>
 
