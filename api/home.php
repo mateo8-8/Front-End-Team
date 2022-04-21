@@ -86,6 +86,44 @@ function showNotification() {
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        .right {
+            width: auto;
+            height: 450px;
+        }
+
+        .center {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        label {
+            display: inline-block;
+            text-align: left;
+            width: 100px;
+            vertical-align: top;
+        }
+
+        #city {
+            text-align: center;
+            height: 2px;
+            padding: 10px;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        .left {
+            flex: 15%;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+
+        .right {
+            flex: 65%;
+            padding: 15px;
+        }
     </style>
 </head>
 
@@ -97,10 +135,71 @@ function showNotification() {
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Map.html">Map</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Chart.html">Chart</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/contact.html">Contact</a></li>
-        <!-- <li><a href="Login.html">Login</a></li> -->
     </ul>
 
-    <h2>Home</h2>
+    <div class="left">
+        <h2>Subscribe To Our Alarm System</h2>
+        <p>If you wish to get notification through email when the fire level went over the risk factor.</p>
+        <p>Please enter your email address in the textbox.</p>
+
+        <form action="subscribe.php" method="post">
+            <input type="text" placeholder="Email address" name="mail">
+            <button id="subscribe" onclick="pop()">Subscribe</button>
+        </form>
+    </div>
+
+    <div class="right" style="background-color:#ddd;">
+        <div class="center">
+            <input type="text" placeholder="Enter The City" id="city">
+            <button id="submit">Submit</button>
+
+            <h1 id="name">Location: </h1>
+
+            <label for="longitude">Longitude: </label>
+            <input type="text" id="longitude" name="longitude">
+            <br><br>
+            <label for="latitude">Latitude: </label>
+            <input type="text" id="latitude" name="latitude">
+            <br><br>
+            <label for="temperature">Temperature: </label>
+            <input type="text" id="temperature" name="temperature">
+            <br><br>
+            <label for="humidity">Humidity: </label>
+            <input type="text" id="humidity" name="humidity">
+            <br><br>
+            <label for="pressure">Pressure: </label>
+            <input type="text" id="pressure" name="pressure">
+            <br><br>
+            <label for="weather">Weather: </label>
+            <input type="text" id="weather" name="weather">
+            <br><br>
+            <label for="wind">Wind: </label>
+            <input type="text" id="wind" name="wind">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("submit").addEventListener('click', function(name) {
+            fetch('https://api.openweathermap.org/data/2.5/weather?q=' + document.getElementById("city").value + '&appid=97f22a67241a67289efed587f6be89d3')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("name").innerHTML = data['name']
+                    document.getElementById("longitude").value = data['coord']['lon']
+                    document.getElementById("latitude").value = data['coord']['lat']
+                    document.getElementById("temperature").value = data['main']['temp'] + " F"
+                    document.getElementById("humidity").value = data['main']['humidity'] + " %"
+                    document.getElementById("pressure").value = data['main']['pressure'] + " hPa"
+                    document.getElementById("weather").value = data['weather'][0]['description']
+                    document.getElementById("wind").value = data['wind']['speed'] + " m/s"
+                    document.getElementById("city").value = ""
+                })
+                .catch(err => alert("Wrong City Name! Try Again!"));
+        })
+
+        function pop() {
+            alert("Thank You For Subscribe To Our Alarm System")
+        }
+    </script>
 </body>
 
 </html>
