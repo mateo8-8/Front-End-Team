@@ -128,7 +128,7 @@ function showNotification() {
 </head>
 
 <body>
-<ul id="nav">
+    <ul id="nav">
         <li><a class="active" href="https://313wildfire.com/Front-End-Team/api/home.php">Home</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/About.html">About</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Search.html">Search</a></li>
