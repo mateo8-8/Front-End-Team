@@ -5,7 +5,7 @@ Humidity double,
 CO2 double,
 NodeID int NOT NULL,
 MeasurementTime datetime,
-RiskFactor int
+RiskFactor int,
 PRIMARY KEY (MeasurementID),
 FOREIGN KEY (NodeID) REFERENCES NODE(NodeID));
 

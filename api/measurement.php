@@ -9,10 +9,10 @@ $temp = $input["temperature"];
 $humidity = $input["humidity"];
 $CO2 = $input["CO2"];
 $measurementtime = $input["measurementtime"];
-$threatlevel = $input["threatlevel"];
+$riskfactor = $input["threatlevel"];
 
-$stmt = $con->prepare("INSERT INTO MEASUREMENT (NodeID, Temperature, Humidity, CO2, MeasurementTime, ThreatLevel) VALUES (?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("iiddsi", $nodeid, $temp, $humidity, $CO2, $measurementtime, $threatlevel);
+$stmt = $con->prepare("INSERT INTO MEASUREMENT (NodeID, Temperature, Humidity, CO2, MeasurementTime, RiskFactor) VALUES (?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("iiddsi", $nodeid, $temp, $humidity, $CO2, $measurementtime, $riskfactor);
 $stmt->execute();
             
 if ($stmt->affected_rows != 1) {
