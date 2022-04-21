@@ -8,9 +8,18 @@
 <body>
     <h1>Subscribtion</h1>
 
-    <center>
         <?php
-        echo 'JKFSJGNKGJFBKGDG';
+        echo '$_REQUEST['u_name']';
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // collect value of input field
+            $name = $_POST['fname'];
+            if (empty($name)) {
+                echo "Name is empty";
+            } else {
+                echo $name;
+            }
+        }
 
         /*         // servername => localhost
         // username => checkout
@@ -50,7 +59,6 @@
         // Close connection
         mysqli_close($conn); */
         ?>
-    </center>
 </body>
 
 </html>

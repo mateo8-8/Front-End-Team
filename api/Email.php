@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <form action="subscribe.php" method="POST">
+    <form action="Subscribe.php" method="POST">
         <input type="text" placeholder="Email address" name="mail">
         <button id="subscribe">Subscribe</button>
     </form>
