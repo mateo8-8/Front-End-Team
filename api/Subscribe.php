@@ -9,15 +9,15 @@
     <h1>Subscribtion</h1>
 
         <?php
-        echo '$_REQUEST['u_name']';
+        echo 'sedfgsdfgsdgf';
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // collect value of input field
-            $name = $_POST['fname'];
-            if (empty($name)) {
+            $email = $_POST['mail'];
+            if (empty($email)) {
                 echo "Name is empty";
             } else {
-                echo $name;
+                echo $email;
             }
         }
 
