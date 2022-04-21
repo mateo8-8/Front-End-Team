@@ -91,7 +91,7 @@ function showNotification() {
 
 <body>
     <ul id="nav">
-        <li><a class="active" href="Home.html">Home</a></li>
+        <li><a class="active" href="home.php">Home</a></li>
         <li><a href="About.html">About</a></li>
         <li><a href="Search.html">Search</a></li>
         <li><a href="Map.html">Map</a></li>
