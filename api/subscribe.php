@@ -10,8 +10,9 @@
 
     <center>
         <?php
+        echo 'JKFSJGNKGJFBKGDG';
 
-        // servername => localhost
+        /*         // servername => localhost
         // username => checkout
         // password => checkout
         // database name => checkout
@@ -47,7 +48,7 @@
         }
 
         // Close connection
-        mysqli_close($conn);
+        mysqli_close($conn); */
         ?>
     </center>
 </body>
