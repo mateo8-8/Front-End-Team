@@ -91,13 +91,13 @@ function showNotification() {
 
 <body>
     <ul id="nav">
-        <li><a class="active" href="home.php">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Search.html">Search</a></li>
-        <li><a href="Map.html">Map</a></li>
-        <li><a href="Chart.html">Chart</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-        <li><a href="Login.html">Login</a></li>
+        <li><a class="active" href="https://313wildfire.com/Front-End-Team/api/home.php">Home</a></li>
+        <li><a href="https://313wildfire.com/Front-End-Team/pages/About.html">About</a></li>
+        <li><a href="https://313wildfire.com/Front-End-Team/pages/Search.html">Search</a></li>
+        <li><a href="https://313wildfire.com/Front-End-Team/pages/Map.html">Map</a></li>
+        <li><a href="https://313wildfire.com/Front-End-Team/pages/Chart.html">Chart</a></li>
+        <li><a href="https://313wildfire.com/Front-End-Team/pages/Contact.html">Contact</a></li>
+        <!-- <li><a href="Login.html">Login</a></li> -->
     </ul>
 
     <h2>Home</h2>
