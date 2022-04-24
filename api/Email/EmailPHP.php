@@ -14,13 +14,7 @@ require('../database.php');
 
 $sql = "SELECT Email FROM SUBSCRIBER";
 $result = mysqli_query($con, $sql);
-$email = "";
 
-while($row = mysqli_fetch_array($result)) {
-    
-    $email .= $row[0] . ";";
-}
-echo $email;
 
 try {
     // Server settings
@@ -36,8 +30,10 @@ try {
 
     // Sender and recipient settings
     $mail->setFrom('sphost1a@gmail.com', 'Admin');
-
-    $mail->addAddress($email, 'Personal User');
+    while($row = mysqli_fetch_array($result)) {
+        $mail->addAddress($row[0], 'Personal User');
+    }
+    
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
 
     // Setting the email content
