@@ -26,7 +26,7 @@
         $sql = "DELETE FROM SUBSCRIBER WHERE Email='atkinsct@dukes.jmu.edu'";
 
         if (mysqli_query($con, $sql)) {
-            echo "<h3>Data deleted/h3>";
+            echo "<h3>Data deleted</h3>";
         } else {
             echo "ERROR: Hush! Sorry $sql. "
                 . mysqli_error($con);
