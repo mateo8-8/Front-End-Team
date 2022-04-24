@@ -23,10 +23,10 @@
         }
 
         $email = $_POST['mail'];
-        $sql = "DELETE FROM SUBSCRIBER WHERE Email='$email'";
+        $sql = "DELETE FROM SUBSCRIBER WHERE Email=''$email''";
 
         if (mysqli_query($con, $sql)) {
-            echo "<h3>Data deleted</h3>";
+            echo "<h3 >Data deleted </h3>";
         } else {
             echo "ERROR: Hush! Sorry $sql. "
                 . mysqli_error($con);
