@@ -44,7 +44,7 @@
     // before I inserted into "checkout"
     //$sql = "INSERT INTO checkout(uname, pword) VALUES ('$usr_name', '$pword')";
 
-    $sql = "INSERT INTO checkout(email) VALUES ('$email')";
+    $sql = "INSERT INTO wildfire(email) VALUES ('$email')";
 
     if (mysqli_query($conn, $sql)) {
         echo "<h3>data stored in a database successfully."
