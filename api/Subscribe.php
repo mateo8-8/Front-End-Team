@@ -37,14 +37,14 @@
     // Taking all 5 values from the form data(input)
     //$usr_name = $_REQUEST['u_name'];
     //$pword = $_REQUEST['pword'];
-    $email = $_REQUEST['email'];
+    $email = $_REQUEST['mail'];
 
     // Performing insert query execution
     // here our table name is college
     // before I inserted into "checkout"
     //$sql = "INSERT INTO checkout(uname, pword) VALUES ('$usr_name', '$pword')";
 
-    $sql = "INSERT INTO wildfire(email) VALUES ('$email')";
+    $sql = "INSERT INTO wildfire(mail) VALUES ('$email')";
 
     if (mysqli_query($conn, $sql)) {
         echo "<h3>data stored in a database successfully."
