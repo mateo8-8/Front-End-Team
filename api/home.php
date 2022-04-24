@@ -2,6 +2,7 @@
 include "database.php";
 session_start();
 
+
 // Check user login or not
 if(!isset($_SESSION['uname'])){
     header('Location: index.php');
@@ -10,7 +11,7 @@ if(!isset($_SESSION['uname'])){
 // logout
 if(isset($_POST['but_logout'])){
     session_destroy();
-    header('Location: index.php');
+    header('Location: login.php');
 }
 
 // Notification
