@@ -51,7 +51,7 @@ if(!isset($_POST['but_submit'])){
 	</body>
 </html>
 <?php
-}
+/* }
 require('database.php');
 	
 if(isset($_POST['but_submit'])){
@@ -82,5 +82,5 @@ if(isset($_POST['but_submit'])){
 		</script>';
 
     }
-}
-?>
+} */
+//?>
