@@ -138,22 +138,25 @@ function showNotification() {
     <ul id="nav">
         <li><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home.php">Home</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/About.html">About</a></li>
+        <li><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/Search.php">Search</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Map.html">Map</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Chart.html">Chart</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Contact.html">Contact</a></li>
     </ul>
 
-    <div class="left">
-        <h2>Subscribe To Our Alarm System</h2>
-        <p>If you wish to get notification through email when the fire level went over the risk factor.</p>
-        <p>Please enter your email address in the textbox.</p>
+    <div class="right">
+        <div class="center">
+            <h2>Subscribe To Our Alarm System</h2>
+            <p>If you wish to get notification through email when the fire level went over the risk factor.</p>
+            <p>Please enter your email address in the textbox.</p>
 
-        <?php include 'Email.php' ?>
-        <button onclick="showNotification()">Show Notification</button>
+            <?php include 'Email.php' ?>
+            <button onclick="showNotification()">Show Notification</button>
+        </div>
     </div>
 
-    <div class="right" style="background-color:#ddd;">
+    <!-- <div class="right" style="background-color:#ddd;">
         <div class="center">
             <input type="text" placeholder="Enter The City" id="city">
             <button id="submit">Submit</button>
@@ -200,7 +203,7 @@ function showNotification() {
                 })
                 .catch(err => alert("Wrong City Name! Try Again!"));
         })
-    </script>
+    </script> -->
 </body>
 
 </html>

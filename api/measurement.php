@@ -16,7 +16,7 @@ $stmt = $con->prepare("INSERT INTO MEASUREMENT (NodeID, Temperature, Humidity, C
 $stmt->bind_param("iiddsi", $nodeid, $temp, $humidity, $CO2, $measurementtime, $riskfactor);
 $stmt->execute();
 
-if($riskfactor >= 1){
+if($riskfactor >= 10){
     include('Email/EmailPHP.php');
 }
 
