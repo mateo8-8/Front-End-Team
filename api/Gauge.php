@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Combo Chart</title>
+    <title>Gauge Chart</title>
     <style>
         #nav {
             list-style-type: none;
@@ -44,41 +44,47 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {
-            'packages': ['corechart']
+            'packages': ['gauge']
         });
-        google.charts.setOnLoadCallback(drawVisualization);
+        google.charts.setOnLoadCallback(drawChart);
 
-        function drawVisualization() {
-            // Some raw data (not necessarily accurate)
+        function drawChart() {
+
             var data = google.visualization.arrayToDataTable([
-                ['Month', 'Los Angeles', 'San Diego', 'San Jose', 'San Francisco', 'Fresno', 'Sacramento', 'Long Beach', 'Oakland', 'Bakersfield', 'Anaheim', 'Average'],
-                ['2022/01', 0.23, 0.45, 0.8, 0.14, 0.234, 0.67, 0.45, 0.8, 0.14, 0.234, 0.67],
-                ['2022/02', 0.56, 0.98, 0.34, 0.12, 0.36, 0.26, 0.35, 0.34, 0.35, 0.87, 0.95],
-                ['2022/03', 0.34, 0.76, 0.7, 0.25, 0.23, 0.14, 0.45, 0.8, 0.14, 0.234, 0.67],
-                ['2022/04', 0.16, 0.35, 0.34, 0.35, 0.87, 0.95, 0.35, 0.34, 0.35, 0.87, 0.95],
-                ['2022/05', 0.87, 0.36, 0.12, 0.87, 0.9, 0.37, 0.98, 0.34, 0.12, 0.36, 0.26]
+                ['Label', 'Value'],
+                ['Temperature', 80],
+                ['Humidity', 55],
+                ['Pressure', 68],
+                ['Wind', 70],
+                ['Fire', 2]
             ]);
 
             var options = {
-                title: 'Monthly Fire Prediction by Nodes',
-                vAxis: {
-                    title: 'Prob',
-                    format: 'percent'
-                },
-                hAxis: {
-                    title: 'Month',
-                    format: 'percent'
-                },
-                seriesType: 'bars',
-                series: {
-                    10: {
-                        type: 'line'
-                    }
-                }
+                width: 800,
+                height: 240,
+                redFrom: 90,
+                redTo: 100,
+                yellowFrom: 75,
+                yellowTo: 90,
+                minorTicks: 5
             };
 
-            var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+            var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+
             chart.draw(data, options);
+
+            setInterval(function() {
+                data.setValue(0, 1, 40 + Math.round(60 * Math.random()));
+                chart.draw(data, options);
+            }, 13000);
+            setInterval(function() {
+                data.setValue(1, 1, 40 + Math.round(60 * Math.random()));
+                chart.draw(data, options);
+            }, 5000);
+            setInterval(function() {
+                data.setValue(2, 1, 60 + Math.round(20 * Math.random()));
+                chart.draw(data, options);
+            }, 26000);
         }
     </script>
 </head>
@@ -94,7 +100,7 @@
         <li><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></li>
     </ul>
 
-    <h2>Combo Chart</h2>
+    <h2>Gauge Chart</h2>
 
     <div id="chart_div" style="width: 900px; height: 500px;"></div>
 </body>
