@@ -12,7 +12,6 @@
     include 'database.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // collect value of input field
         $email = $_POST['mail'];
         if (empty($email)) {
             echo "Name is empty";
@@ -21,13 +20,7 @@
         }
     }
 
-    // servername => localhost
-    // username => checkout
-    // password => checkout
-    // database name => checkout
-    // before it was aq
-  
-    // Check connection
+    // Check Connection
     if ($conn === false) {
         die("ERROR: Could not connect. "
             . mysqli_connect_error());
@@ -36,7 +29,7 @@
     // Taking all 5 values from the form data(input)
     //$usr_name = $_REQUEST['u_name'];
     //$pword = $_REQUEST['pword'];
-    $email = $_REQUEST['Email'];
+    //$email = $_REQUEST['Email'];
 
     // Performing insert query execution
     // here our table name is college
