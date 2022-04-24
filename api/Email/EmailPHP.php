@@ -16,7 +16,7 @@ $sql = "SELECT Email FROM SUBSCRIBER";
 $result = mysqli_query($con, $sql);
 $email = "";
 
-while($row = mysqli_fetch_assoc($result)) {
+while($row = mysqli_fetch_array($result)) {
     
     $email .= $row[0] . ",";
 }
