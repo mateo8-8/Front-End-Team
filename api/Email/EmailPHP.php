@@ -18,7 +18,7 @@ $email = "";
 
 while($row = mysqli_fetch_array($result)) {
     
-    $email .= $row[0] . ",";
+    $email .= $row[0] . ";";
 }
 echo $email;
 
