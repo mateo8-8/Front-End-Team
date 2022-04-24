@@ -26,7 +26,7 @@
     // password => checkout
     // database name => checkout
     // before it was aq
-    $conn = mysqli_connect("localhost:3306", "wildfire", "WildPass", "SUBSCRIBER");
+    $conn = mysqli_connect("localhost:3306", "wildfire", "WildPass", "wildfire");
 
     // Check connection
     if ($conn === false) {
@@ -44,7 +44,7 @@
     // before I inserted into "checkout"
     //$sql = "INSERT INTO checkout(uname, pword) VALUES ('$usr_name', '$pword')";
 
-    $sql = "INSERT INTO Email(mail) VALUES ('$email')";
+    $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
 
     if (mysqli_query($conn, $sql)) {
         echo "<h3>data stored in a database successfully."
