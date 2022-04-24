@@ -116,6 +116,35 @@ function showNotification() {
             background-color: #ddd;
             text-align: center;
         }
+
+        .banner {
+            background: #009579;
+        }
+
+        .banner__content {
+            padding: 16px;
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .banner__text {
+            flex-grow: 1;
+            line-height: 1.4;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .banner__close {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .banner__text,
+        .banner__close>span {
+            color: #ffffff;
+        }
     </style>
 </head>
 
@@ -130,6 +159,19 @@ function showNotification() {
         <li><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></li>
     </ul>
 
+    <div class="banner">
+        <div class="banner__content">
+            <div class="banner__text">
+                <strong>Reminder:</strong> your subscription expires in 22 days. Renew to avoid account suspension.
+            </div>
+            <button class="banner__close" type="button">
+                <span class="material-icons">
+                    close
+                </span>
+            </button>
+        </div>
+    </div>
+
     <div class="right">
         <div class="center">
             <h2>Subscribe To Our Alarm System</h2>
@@ -140,6 +182,12 @@ function showNotification() {
             <button onclick="showNotification()">Show Notification</button>
         </div>
     </div>
+
+    <script>
+        document.querySelector(".banner__close").addEventListener("click", function() {
+            this.closest(".banner").style.display = "none";
+        });
+    </script>
 </body>
 
 </html>
