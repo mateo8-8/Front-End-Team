@@ -103,9 +103,6 @@
     </ul>
 
     <h2>Gauge Chart</h2>
-    <!-- 
-    <button onclick="window.location.href='Combo.html'">Combo Chart</button>
-    <button onclick="window.location.href='Gauge.html'">Gauge Chart</button> -->
 
     <div id="chart_div" style="width: 900px; height: 500px;"></div>
 </body>
