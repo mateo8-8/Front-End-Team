@@ -126,6 +126,7 @@ function showNotification() {
         <li><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/Search.php">Search</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/Map.php">Map</a></li>
+        <li><a href="https://313wildfire.com/Front-End-Team/api/Combo.php">Combo Chart</a></li>
         <!-- <li><a href="https://313wildfire.com/Front-End-Team/pages/Chart.html">Chart</a></li> -->
         <!-- <li><a href="https://313wildfire.com/Front-End-Team/pages/Combo.html">Combo Chart</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Gauge.html">Gauge Chart</a></li>
