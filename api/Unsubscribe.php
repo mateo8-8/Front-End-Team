@@ -22,7 +22,7 @@
                 . mysqli_connect_error());
         }
 
-        $email = $_POST['unmail'];
+        $email = $_POST['unsub'];
        // $sql = "DELETE FROM SUBSCRIBER WHERE Email='atkinschadt@gmail.com'";
         $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
 
