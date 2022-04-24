@@ -144,15 +144,13 @@ function showNotification() {
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Contact.html">Contact</a></li>
     </ul>
 
-    <div class="right" style="background-color:#ddd;">
-        <div class="center">
-            <h2>Subscribe To Our Alarm System</h2>
-            <p>If you wish to get notification through email when the fire level went over the risk factor.</p>
-            <p>Please enter your email address in the textbox.</p>
+    <div class="center">
+        <h2>Subscribe To Our Alarm System</h2>
+        <p>If you wish to get notification through email when the fire level went over the risk factor.</p>
+        <p>Please enter your email address in the textbox.</p>
 
-            <?php include 'Email.php' ?>
-            <button onclick="showNotification()">Show Notification</button>
-        </div>
+        <?php include 'Email.php' ?>
+        <button onclick="showNotification()">Show Notification</button>
     </div>
 
     <!-- <div class="right" style="background-color:#ddd;">
