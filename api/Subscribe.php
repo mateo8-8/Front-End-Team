@@ -6,19 +6,19 @@
 </head>
 
 <body>
-    <h1>Subscribtion</h1>
+    <h1>Subscription</h1>
 
     <?php
     include 'database.php';
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    /* if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST['mail'];
         if (empty($email)) {
             echo "Name is empty";
         } else {
             echo $email;
         }
-    }
+    } */
 
     // Check Connection
     if ($con === false) {
@@ -36,10 +36,11 @@
     // before I inserted into "checkout"
     //$sql = "INSERT INTO checkout(uname, pword) VALUES ('$usr_name', '$pword')";
 
+    $email = $_POST['mail'];
     $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
 
     if (mysqli_query($con, $sql)) {
-        echo "<h3>data stored in a database successfully."
+        echo "<h3>Data stored in a database successfully."
             . " Please browse your localhost php my admin"
             . " to view the updated data</h3>";
 
