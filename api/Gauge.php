@@ -15,11 +15,11 @@
             overflow: hidden;
             background-color: #333;
         }
-        
+
         #nav li {
             float: left;
         }
-        
+
         #nav li a {
             display: block;
             color: white;
@@ -27,15 +27,15 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-        
+
         #nav li a:hover {
             background-color: #111;
         }
-        
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        
+
         #chart_div {
             margin: auto;
         }
@@ -102,10 +102,10 @@
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Contact.html">Contact</a></li>
     </ul>
 
-    <h2>Chart</h2>
-
+    <h2>Gauge Chart</h2>
+    <!-- 
     <button onclick="window.location.href='Combo.html'">Combo Chart</button>
-    <button onclick="window.location.href='Gauge.html'">Gauge Chart</button>
+    <button onclick="window.location.href='Gauge.html'">Gauge Chart</button> -->
 
     <div id="chart_div" style="width: 900px; height: 500px;"></div>
 </body>
