@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Front End Demo #1</title>
+    <title>Email</title>
 </head>
 
 <body>
