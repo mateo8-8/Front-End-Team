@@ -23,8 +23,8 @@
         }
 
         $email = $_POST['unsub'];
-       // $sql = "DELETE FROM SUBSCRIBER WHERE Email='atkinschadt@gmail.com'";
-        $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
+        $sql = "DELETE FROM SUBSCRIBER WHERE Email='$email'";
+        // $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
 
         if (mysqli_query($con, $sql)) {
             echo "<h3 >Data deleted </h3>";
