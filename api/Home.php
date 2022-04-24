@@ -1,6 +1,4 @@
 <?php
-/* include "database.php";
-session_start(); */
 
 // Notification
 echo '<script type="text/javascript">
@@ -12,24 +10,24 @@ function initNotifications() {
             if (permission === \'granted\') {
                 notificationsEnabled = true;
             } else {
-                alert("You denied Notifications, its so sad");
+                alert("You Denied Notifications, It\'s So Sad");
             }
         });
     } else {
-        alert("Your browser doesn\'t support Notifications API");
+        alert("Your Browser Doesn\'t Support Notifications API");
     }
 }
 
 function showNotification() {
     if (notificationsEnabled) {
         var notification = new Notification("Wildfire Detection", {
-            body : \'Your node is offline\',
+            body : \'Testing\',
         });
         
         setTimeout(function() { notification.close(); }, 5000);
         console.log("Worked");
     } else {
-        alert("Notifications are disabled");
+        alert("Notifications Are Disabled");
     }
 }
 </script>'
