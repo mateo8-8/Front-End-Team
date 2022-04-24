@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Subscribtion</title>
+    <title>Subscription</title>
 </head>
 
 <body>
