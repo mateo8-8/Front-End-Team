@@ -20,7 +20,7 @@ if($riskfactor >= 1){
     include('/Email/EmailPHP.php');
 }
 
-if ($stmt->affected_rows != 1) {
+if ($stmt->affected_rows = 1) {
     echo "Failure";
 }
 
