@@ -26,7 +26,7 @@
     // password => checkout
     // database name => checkout
     // before it was aq
-    $conn = mysqli_connect("localhost", "checkout", "checkout", "checkout");
+    $conn = mysqli_connect("localhost:3306", "wildfire", "WildPass", "wildfire");
 
     // Check connection
     if ($conn === false) {
