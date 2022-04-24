@@ -10,7 +10,7 @@ require('SMTP.php');
 // passing true in constructor enables exceptions in PHPMailer
 $mail = new PHPMailer(true);
 
-include 'database.php';
+require('database.php');
 
 $sql = "SELECT Email FROM SUBSCRIBER";
 $result = mysqli_query($con, $sql);
