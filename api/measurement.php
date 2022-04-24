@@ -5,7 +5,7 @@ require('database.php');
 $input = json_decode(file_get_contents('php://input'), true);
 
 $nodeid = $input['nodeid'];
-$temp = $input["temperature"];
+$temp = $input["temp"];
 $humidity = $input["humidity"];
 $CO2 = $input["CO2"];
 $measurementtime = $input["measurementtime"];
