@@ -13,7 +13,7 @@ $mail = new PHPMailer(true);
 include 'database.php';
 
 $sql = "SELECT Email FROM SUBSCRIBER";
-$result = $con->query($sql);
+$result = mysqli_query($con, $sql);
 
 while($row = mysqli_fetch_array($result)) {
     echo $row;
