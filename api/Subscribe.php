@@ -12,7 +12,6 @@
     include 'database.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // collect value of input field
         $email = $_POST['mail'];
         if (empty($email)) {
             echo "Name is empty";
@@ -21,14 +20,7 @@
         }
     }
 
-    // servername => localhost
-    // username => checkout
-    // password => checkout
-    // database name => checkout
-    // before it was aq
-    $conn = mysqli_connect("localhost:3306", "wildfire", "WildPass", "SUBSCRIBER");
-
-    // Check connection
+    // Check Connection
     if ($conn === false) {
         die("ERROR: Could not connect. "
             . mysqli_connect_error());
@@ -37,14 +29,14 @@
     // Taking all 5 values from the form data(input)
     //$usr_name = $_REQUEST['u_name'];
     //$pword = $_REQUEST['pword'];
-    $email = $_REQUEST['Email'];
+    //$email = $_REQUEST['Email'];
 
     // Performing insert query execution
     // here our table name is college
     // before I inserted into "checkout"
     //$sql = "INSERT INTO checkout(uname, pword) VALUES ('$usr_name', '$pword')";
 
-    $sql = "INSERT INTO Email(mail) VALUES ('$email')";
+    $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
 
     if (mysqli_query($conn, $sql)) {
         echo "<h3>data stored in a database successfully."
