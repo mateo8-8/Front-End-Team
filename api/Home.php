@@ -153,7 +153,7 @@ function showNotification() {
         <button onclick="showNotification()">Show Notification</button>
     </div>
 
-    <div class="right" style="background-color:#ddd;">
+    <!-- <div class="right" style="background-color:#ddd;">
         <div class="center">
             <input type="text" placeholder="Enter The City" id="city">
             <button id="submit">Submit</button>
@@ -200,7 +200,7 @@ function showNotification() {
                 })
                 .catch(err => alert("Wrong City Name! Try Again!"));
         })
-    </script>
+    </script> -->
 </body>
 
 </html>
