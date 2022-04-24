@@ -9,6 +9,8 @@
     <h1>Subscribtion</h1>
 
     <?php
+    include 'database.php';
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // collect value of input field
         $email = $_POST['mail'];
