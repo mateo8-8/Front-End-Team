@@ -134,7 +134,7 @@ function showNotification() {
     </style>
 </head>
 
-<body>
+<body onload="initNotifications()">
     <ul id="nav">
         <li><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home.php">Home</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/About.html">About</a></li>
@@ -150,6 +150,7 @@ function showNotification() {
         <p>Please enter your email address in the textbox.</p>
 
         <?php include 'Email.php' ?>
+        <button onclick="showNotification()">Show Notification</button>
     </div>
 
     <div class="right" style="background-color:#ddd;">
