@@ -24,7 +24,8 @@ try {
 
     // Sender and recipient settings
     $mail->setFrom('sphost1a@gmail.com', 'Admin');
-    $mail->addAddress('sphost1b@gmail.com', 'Personal User');
+
+    $mail->addAddress('colenutter@gmail.com', 'Personal User');
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
 
     // Setting the email content
