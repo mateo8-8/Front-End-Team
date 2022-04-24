@@ -138,6 +138,7 @@ function showNotification() {
     <ul id="nav">
         <li><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home.php">Home</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/About.html">About</a></li>
+        <li><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/Search.php">Search</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Map.html">Map</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/pages/Chart.html">Chart</a></li>
