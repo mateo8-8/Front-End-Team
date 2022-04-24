@@ -36,7 +36,7 @@
     // before I inserted into "checkout"
     //$sql = "INSERT INTO checkout(uname, pword) VALUES ('$usr_name', '$pword')";
 
-    $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
+    $sql = "INSERT INTO SUBSCRIBER(SubscriberID, Email) VALUES ('1', '$email')";
 
     if (mysqli_query($conn, $sql)) {
         echo "<h3>data stored in a database successfully."
