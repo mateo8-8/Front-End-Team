@@ -17,8 +17,10 @@ $result = mysqli_query($con, $sql);
 $email = "";
 
 while($row = mysqli_fetch_array($result)) {
+    
     $email .= $row[0] . ",";
 }
+echo $email;
 
 try {
     // Server settings
