@@ -3,35 +3,41 @@
 
 <head>
     <title>Subscription</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Subscription</h1>
+    <div>
+        <?php
+        include 'database.php';
 
-    <?php
-    include 'database.php';
+        // Check Connection
+        if ($con === false) {
+            die("ERROR: Could not connect. "
+                . mysqli_connect_error());
+        }
 
-    // Check Connection
-    if ($con === false) {
-        die("ERROR: Could not connect. "
-            . mysqli_connect_error());
-    }
+        $email = $_POST['mail'];
+        $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
 
-    $email = $_POST['mail'];
-    $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
+        if (mysqli_query($con, $sql)) {
+            echo "<h3>Data stored in a database successfully."
+                . " Please browse your localhost php my admin"
+                . " to view the updated data</h3>";
+        } else {
+            echo "ERROR: Hush! Sorry $sql. "
+                . mysqli_error($con);
+        }
 
-    if (mysqli_query($con, $sql)) {
-        echo "<h3>Data stored in a database successfully."
-            . " Please browse your localhost php my admin"
-            . " to view the updated data</h3>";
-    } else {
-        echo "ERROR: Hush! Sorry $sql. "
-            . mysqli_error($con);
-    }
-
-    // Close Connection
-    mysqli_close($con);
-    ?>
+        // Close Connection
+        mysqli_close($con);
+        ?>
+    </div>
 </body>
 
 </html>
