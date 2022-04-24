@@ -32,7 +32,6 @@ function showNotification() {
 }
 </script>'
 
-
 ?>
 
 <!DOCTYPE html>
@@ -128,10 +127,7 @@ function showNotification() {
         <li><a href="https://313wildfire.com/Front-End-Team/api/Map.php">Map</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/Combo.php">Combo Chart</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/Gauge.php">Gauge Chart</a></li>
-        <!-- <li><a href="https://313wildfire.com/Front-End-Team/pages/Chart.html">Chart</a></li> -->
-        <!-- <li><a href="https://313wildfire.com/Front-End-Team/pages/Combo.html">Combo Chart</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/pages/Gauge.html">Gauge Chart</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/pages/Contact.html">Contact</a></li> -->
+        <li><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></li>
     </ul>
 
     <div class="right">
