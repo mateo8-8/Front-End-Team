@@ -50,6 +50,7 @@ function showNotification() {
         }
         #back {
             background-color: orange;
+            color: black;
         }
         #nav {
             list-style-type: none;
