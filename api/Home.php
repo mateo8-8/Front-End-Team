@@ -48,9 +48,6 @@ function showNotification() {
             background-color: red;
             background-image: linear-gradient(yellow, red);
         }
-        #back {
-            background-color: orange;
-        }
         #nav {
             list-style-type: none;
             margin: 0;
@@ -126,6 +123,7 @@ function showNotification() {
 
         .banner {
             background: #5D8AA8;
+            background-color: orange;
         }
 
         .banner-content {
@@ -166,7 +164,7 @@ function showNotification() {
         <li><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></li>
     </ul>
 
-    <div class="banner" id="back">
+    <div class="banner">
         <div class="banner-content">
             <div class="banner-text">
                 <strong>Alert:</strong> Node 1 is Down.
