@@ -53,7 +53,7 @@ function showNotification() {
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: #EB0A0A;
         }
 
         #nav li {
