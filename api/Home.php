@@ -152,7 +152,7 @@ function showNotification() {
     </style>
 </head>
 
-<body id="grad" onload="initNotifications()">
+<body id="grad">
     <ul id="nav">
         <li><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home.php">Home</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></li>
