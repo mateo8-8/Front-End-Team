@@ -44,10 +44,9 @@ function showNotification() {
 
     <title>Home</title>
     <style>
-
         #grad {
             background-color: red;
-            background-image: linear-gradient(red, yellow);
+            background-image: linear-gradient(yellow, red);
         }
         #nav {
             list-style-type: none;
