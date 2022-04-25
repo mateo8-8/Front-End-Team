@@ -50,7 +50,6 @@ function showNotification() {
         }
         #back {
             background-color: orange;
-            color: black;
         }
         #nav {
             list-style-type: none;
@@ -141,7 +140,7 @@ function showNotification() {
             flex-grow: 1;
             line-height: 1.5;
             font-family: "Quicksand", sans-serif;
-            color: #ffffff;
+            color: black;
         }
 
         .banner-close {
