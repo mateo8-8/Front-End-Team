@@ -29,7 +29,7 @@ try {
     $mail->Password = 'Checkout!'; // YOUR gmail password
 
     // Sender and recipient settings
-    $mail->setFrom('sphost1a@gmail.com', 'Admin');
+    $mail->setFrom('sphost1a@gmail.com', '313 Wild Fire Detection');
     while($row = mysqli_fetch_array($result)) {
         $mail->addAddress($row[0], 'Personal User');
     }
@@ -39,7 +39,9 @@ try {
     // Setting the email content
     $mail->IsHTML(true);
     $mail->Subject = "Warning! Fire Detected";
-    $mail->Body = 'ATTENTION:   \n Wild fire risk detected!!';
+    $mail->Body = 'ATTENTION:
+    
+    Wild fire risk detected!!';
     $mail->AltBody = 'Alert';
 
     $mail->send();
