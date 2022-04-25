@@ -145,10 +145,14 @@ function showNotification() {
         span {
             color: #ffffff;
         }
+
+        #grad {
+            background-image: linear-gradient(red, yellow);
+        }
     </style>
 </head>
 
-<body onload="initNotifications()">
+<body id="grad" onload="initNotifications()">
     <ul id="nav">
         <li><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home.php">Home</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></li>
