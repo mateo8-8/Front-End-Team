@@ -13,7 +13,7 @@
 
     <form action="Unsubscribe.php" method="POST">
         <input type="text" placeholder="Unsubscribe" name="unsub" size="50">
-        <button id="subscribe">Unsubscribe</button>
+        <button id="unsubscribe">Unsubscribe</button>
     </form>
 </body>
 
