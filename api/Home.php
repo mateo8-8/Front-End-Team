@@ -49,7 +49,7 @@ function showNotification() {
             background-image: linear-gradient(yellow, red);
         }
         #back {
-            background-color: red;
+            background-color: orange;
         }
         #nav {
             list-style-type: none;
