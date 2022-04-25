@@ -38,9 +38,9 @@ try {
 
     // Setting the email content
     $mail->IsHTML(true);
-    $mail->Subject = "Warning Fire Detected";
-    $mail->Body = 'TESTING EMAIL';
-    $mail->AltBody = 'Test Email';
+    $mail->Subject = "Warning! Fire Detected";
+    $mail->Body = 'ATTENTION:   \n Wild fire risk detected!!';
+    $mail->AltBody = 'Alert';
 
     $mail->send();
     echo "Email message sent.";

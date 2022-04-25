@@ -12,7 +12,7 @@
     </form>
 
     <form action="Unsubscribe.php" method="POST">
-        <input type="text" placeholder="Unsubscribe" name="unsub" size="50">
+        <input type="text" placeholder="Email address" name="unsub" size="50">
         <button id="unsubscribe">Unsubscribe</button>
     </form>
 </body>
