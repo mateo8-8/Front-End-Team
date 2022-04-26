@@ -48,6 +48,7 @@ function showNotification() {
             background-color: red;
             background-image: linear-gradient(yellow, red);
         }
+
         #nav {
             list-style-type: none;
             margin: 0;
@@ -70,7 +71,7 @@ function showNotification() {
         }
 
         #nav li a:hover {
-            background-color: #111;
+            background-color: white;
         }
 
         body {
@@ -150,6 +151,10 @@ function showNotification() {
 
         span {
             color: #ffffff;
+        }
+
+        span:hover {
+            background-color: black;
         }
     </style>
 </head>
