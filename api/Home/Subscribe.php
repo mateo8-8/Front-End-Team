@@ -26,10 +26,8 @@
         $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
 
         if (mysqli_query($con, $sql)) {
-            echo '<script language="javascript">';
-            echo 'alert("Email Successfully Added")';
-            echo 'window.location = "https://313wildfire.com/Front-End-Team/api/Home/Home.php"';
-            echo '</script>';
+            echo '<script>alert("Email Successfully Added")</script>';
+
         } else {
             echo "ERROR: Hush! Sorry $sql. "
                 . mysqli_error($con);
