@@ -26,6 +26,7 @@
         $sql = "INSERT INTO SUBSCRIBER(Email) VALUES ('$email')";
 
         if (mysqli_query($con, $sql)) {
+            echo 'Home.php';
             echo '<script>alert("Email Successfully Added")</script>';
 
         } else {
