@@ -47,6 +47,7 @@ function showNotification() {
         #grad {
             background-color: red;
             background-image: linear-gradient(yellow, red);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         #nav {
@@ -55,7 +56,6 @@ function showNotification() {
             padding: 0;
             overflow: hidden;
             background-color: #EB0A0A;
-            color: black;
         }
 
         #nav li {
@@ -64,7 +64,7 @@ function showNotification() {
 
         #nav li a {
             display: block;
-            color: white;
+            color: black;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -72,10 +72,6 @@ function showNotification() {
 
         #nav li a:hover {
             background-color: white;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         .right {
@@ -161,13 +157,13 @@ function showNotification() {
 
 <body id="grad">
     <ul id="nav">
-        <li><strong><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home.php" style="color:black;">Home</a></strong></li>
-        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php" style="color:black;">Open Weather API</a></strong></li>
-        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Search.php" style="color:black;">Search</a></strong></li>
-        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Map.php" style="color:black;">Map</a></strong></li>
-        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Combo.php" style="color:black;">Combo Chart</a></strong></li>
-        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Gauge.php" style="color:black;">Gauge Chart</a></strong></li>
-        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Contact.php" style="color:black;">Contact</a></strong></li>
+        <li><strong><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home.php">Home</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Search.php">Search</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Map.php">Map</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Combo.php">Combo Chart</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Gauge.php">Gauge Chart</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></strong></li>
     </ul>
 
     <div class="banner">
