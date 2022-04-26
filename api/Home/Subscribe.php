@@ -14,7 +14,7 @@
 <body>
     <div>
         <?php
-        include 'database.php';
+        include '../database.php';
 
         // Check Connection
         if ($con === false) {
