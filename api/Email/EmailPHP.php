@@ -10,12 +10,12 @@ require('SMTP.php');
 // passing true in constructor enables exceptions in PHPMailer
 $mail = new PHPMailer(true);
 
-require('../database.php');
-
 $sql = "SELECT Email FROM SUBSCRIBER";
 $result = mysqli_query($con, $sql);
 
-
+if (!$con){
+    require('../database.php');
+}
 try {
     // Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER; // for detailed debug output
