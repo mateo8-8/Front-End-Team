@@ -13,7 +13,9 @@ $mail = new PHPMailer(true);
 $sql = "SELECT Email FROM SUBSCRIBER";
 $result = mysqli_query($con, $sql);
 
-
+if (!$con){
+    require('../database.php');
+}
 try {
     // Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER; // for detailed debug output
