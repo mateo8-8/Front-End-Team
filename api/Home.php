@@ -152,6 +152,10 @@ function showNotification() {
         span {
             color: #ffffff;
         }
+
+        span:hover {
+            background-color: black;
+        }
     </style>
 </head>
 
