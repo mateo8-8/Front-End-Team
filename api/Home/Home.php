@@ -78,11 +78,8 @@ function showNotification() {
             <p>If you wish to get notification through email when the fire level went over the risk factor.</p>
             <p>Please enter your email address in the textbox.</p>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             <?php include 'Email.php' ?>
-=======
->>>>>>> b2fb262 (Home Errors)
+
             <button onclick="showNotification()">Show Notification</button>
         </div>
     </div>
