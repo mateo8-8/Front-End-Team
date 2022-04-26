@@ -1,3 +1,39 @@
+<?php
+
+// Notification
+echo '<script type="text/javascript">
+var notificationsEnabled = false;
+
+function initNotifications() {
+    if (window.Notification) {
+        Notification.requestPermission(function(permission) {
+            if (permission === \'granted\') {
+                notificationsEnabled = true;
+            } else {
+                alert("You Denied Notifications, It\'s So Sad");
+            }
+        });
+    } else {
+        alert("Your Browser Doesn\'t Support Notifications API");
+    }
+}
+
+function showNotification() {
+    if (notificationsEnabled) {
+        var notification = new Notification("Wildfire Detection", {
+            body : \'Testing\',
+        });
+        
+        setTimeout(function() { notification.close(); }, 5000);
+        console.log("Worked");
+    } else {
+        alert("Notifications Are Disabled");
+    }
+}
+</script>'
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +50,7 @@
 
 <body id="grad">
     <ul id="nav">
-        <li><strong><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home/Home.php">Home</a></strong></li>
+        <li><strong><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home.php">Home</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Search.php">Search</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Map.php">Map</a></strong></li>
