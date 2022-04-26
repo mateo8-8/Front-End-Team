@@ -91,7 +91,7 @@
 
 <body>
     <ul id="nav">
-        <li><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home.php">Home</a></li>
+        <li><strong><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home/Home.php">Home</a></strong></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/Search.php">Search</a></li>
         <li><a href="https://313wildfire.com/Front-End-Team/api/Map.php">Map</a></li>
