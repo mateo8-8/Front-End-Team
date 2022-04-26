@@ -17,7 +17,7 @@ $stmt->bind_param("iiddsi", $nodeid, $temp, $humidity, $CO2, $measurementtime, $
 $stmt->execute();
 
 if($riskfactor >= 10){
-    include('Email/EmailPHP.php');
+    require('Email/EmailPHP.php');
 }
 
 if ($stmt->affected_rows = 1) {
