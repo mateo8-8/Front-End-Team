@@ -25,16 +25,16 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
-    $mail->Username = '313centralteam@gmail.com'; // YOUR gmail email
-    $mail->Password = 'S8iQCVCQ2P8eRzL'; // YOUR gmail password
+    $mail->Username = 'sphost1a@gmail.com'; // YOUR gmail email
+    $mail->Password = 'Checkout!'; // YOUR gmail password
 
     // Sender and recipient settings
-    $mail->setFrom('313centralteam@gmail.com', '313 Wild Fire Detection');
+    $mail->setFrom('sphost1a@gmail.com', '313 Wild Fire Detection');
     while($row = mysqli_fetch_array($result)) {
         $mail->addAddress($row[0], 'Personal User');
     }
     
-    $mail->addReplyTo('313centralteam@gmail.com', 'Admin'); // to set the reply to
+    $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
 
     // Setting the email content
     $mail->IsHTML(true);
