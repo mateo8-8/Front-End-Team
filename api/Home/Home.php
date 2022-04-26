@@ -50,7 +50,7 @@ function showNotification() {
 
 <body id="grad">
     <ul id="nav">
-        <li><strong><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home.php">Home</a></strong></li>
+        <li><strong><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home/Home.php">Home</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Search.php">Search</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Map.php">Map</a></strong></li>
@@ -79,9 +79,9 @@ function showNotification() {
             <p>Please enter your email address in the textbox.</p>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <?php include 'Email.php' ?>
 =======
-            <?php include 'https://313wildfire.com/Front-End-Team/api/Email/EmailPHP.php' ?>
 >>>>>>> b2fb262 (Home Errors)
             <button onclick="showNotification()">Show Notification</button>
         </div>
