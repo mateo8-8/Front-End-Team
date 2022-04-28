@@ -8,11 +8,12 @@ html {
     height: 100%;
 }
 
-#grad {
+
+/* #grad {
     background-color: red;
     background-image: linear-gradient(yellow, red);
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 #nav {
     list-style-type: none;
