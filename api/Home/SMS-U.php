@@ -4,11 +4,7 @@
 <head>
     <title>SMS</title>
 
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="https://313wildfire.com/Front-End-Team/api/Home/Subscribe.css">
 </head>
 
 <body>
@@ -22,11 +18,11 @@
                 . mysqli_connect_error());
         }
 
-        $message = $_POST['message'];
-        $sql = "INSERT INTO PHONE(Phone) VALUES ('$message')";
+        $message = $_POST['message-u'];
+        $sql = "DELETE FROM PHONE WHERE Phone='$message'";
 
         if (mysqli_query($con, $sql)) {
-            echo "<h3>The Phone Number Has Successfully Added To The Database</h3>";
+            echo "<h3>The Phone Number Has Successfully Deleted From The Database</h3>";
         } else {
             echo "ERROR: Hush! Sorry $sql. "
                 . mysqli_error($con);
