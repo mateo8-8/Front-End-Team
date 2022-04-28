@@ -5,7 +5,7 @@
     <title>Email</title>
 
     <style>
-        div {
+        #boxes {
             text-align: center;
             padding-top: 20px;
         }
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div>
+    <div id="boxes">
         <form action="Subscribe.php" method="POST">
             <input type="email" placeholder="Email address" name="mail" size="50" required="required">
             <button id="subscribe">Subscribe</button>
