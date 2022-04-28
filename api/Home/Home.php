@@ -1,7 +1,6 @@
-<?php
 
-// Notification
-/* echo '<script type="text/javascript">
+<!-- // Notification
+echo '<script type="text/javascript">
 var notificationsEnabled = false;
 
 function initNotifications() {
@@ -30,9 +29,8 @@ function showNotification() {
         alert("Notifications Are Disabled");
     }
 }
-</script>' */
+</script>' -->
 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
