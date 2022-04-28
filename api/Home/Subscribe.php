@@ -5,17 +5,6 @@
     <title>Subscription</title>
 
     <link rel="stylesheet" href="https://313wildfire.com/Front-End-Team/api/Home/Subscribe.css">
-    <style>
-        html {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: red;
-            background-image: linear-gradient(yellow, red);
-            font-family: Arial, Helvetica, sans-serif;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
 
 <body>
