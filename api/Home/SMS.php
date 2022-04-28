@@ -23,7 +23,7 @@
         }
 
         $message = $_POST['message'];
-        $sql = "INSERT INTO SUBSCRIBER(Phone) VALUES ('$message')";
+        $sql = "INSERT INTO PHONE(Phone) VALUES ('$message')";
 
         if (mysqli_query($con, $sql)) {
             echo "<h3>The Phone Number Has Successfully Added To The Database</h3>";
