@@ -12,11 +12,6 @@ $mail = new PHPMailer(true);
 
 $sql = "SELECT Phone FROM PHONE";
 $result = mysqli_query($con, $sql);
-$row2 = mysqli_fetch_array($result);
-
-echo $row2[0];
-
-
 
     include('../database.php');
 
@@ -34,13 +29,15 @@ try {
 
     // Sender and recipient settings
     $mail->setFrom('sphost1a@gmail.com', '313 Wild Fire Detection');
+    $mail->addAddress( "8044414385@txt.att.net", 'Personal User');
+    echo $row[0];
     
-    while($row = mysqli_fetch_array($result)) {
-        // $var = "@txt.att.net";
-        $mail->addAddress( $row[0] .= "@txt.att.net", 'Personal User');
+    // while($row = mysqli_fetch_array($result)) {
+    //     // $var = "@txt.att.net";
+    //     $mail->addAddress( $row[0] .= "@txt.att.net", 'Personal User');
 
       
-    }
+    // }
 
 
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
