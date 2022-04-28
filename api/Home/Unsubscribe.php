@@ -4,11 +4,7 @@
 <head>
     <title>Subscription</title>
 
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="https://313wildfire.com/Front-End-Team/api/Home/Subscribe.css">
 </head>
 
 <body>
