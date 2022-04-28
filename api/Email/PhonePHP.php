@@ -33,8 +33,8 @@ try {
     $mail->setFrom('sphost1a@gmail.com', '313 Wild Fire Detection');
     
     while($row = mysqli_fetch_array($result)) {
-        $var = "@txt.att.net";
-        $mail->addAddress( $row[0] .= $var, 'Personal User');
+        // $var = "@txt.att.net";
+        $mail->addAddress( $row[0] .= "@txt.att.net", 'Personal User');
 
       
     }
