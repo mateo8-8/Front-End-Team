@@ -14,7 +14,7 @@ $sql = "SELECT Phone FROM PHONE";
 $result = mysqli_query($con, $sql);
 $row2 = mysqli_fetch_array($result);
 
-echo $row2;
+echo $row2[0];
 
 
 
