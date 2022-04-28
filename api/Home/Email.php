@@ -16,12 +16,12 @@
     <div id="boxes">
         <form action="Subscribe.php" method="POST">
             <input type="email" placeholder="Email address" name="mail" size="50" required="required">
-            <button id="subscribe">Subscribe</button>
+            <button id="subscribe">Subscribe Email</button>
         </form>
 
         <form action="Unsubscribe.php" method="POST">
             <input type="email" placeholder="Email address" name="unsub" size="50" required="required">
-            <button id="unsubscribe">Unsubscribe</button>
+            <button id="unsubscribe">Unsubscribe Email</button>
         </form>
 
         <form action="SMS.php" method="POST">
