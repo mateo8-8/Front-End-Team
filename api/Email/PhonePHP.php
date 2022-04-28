@@ -34,7 +34,6 @@ try {
     
     while($row = mysqli_fetch_array($result)) {
         // $var = "@txt.att.net";
-        echo $row[0];
         $mail->addAddress( $row[0] .= "@txt.att.net", 'Personal User');
 
       
@@ -55,5 +54,6 @@ try {
     echo "Email message sent.";
 } catch (Exception $e) {
     echo "Error in sending email. Mailer Error: {$mail->ErrorInfo}";
+    echo $row[0];
 }
 ?>
