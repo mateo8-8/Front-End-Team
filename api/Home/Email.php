@@ -16,7 +16,7 @@
         <button id="unsubscribe">Unsubscribe</button>
     </form>
 
-    <form action="" method="POST">
+    <form action="SMS.php" method="POST">
         <input placeholder="Phone Number" name="message" size="50" required="required">
         <button id="sms">Add Phone Number</button>
     </form>
