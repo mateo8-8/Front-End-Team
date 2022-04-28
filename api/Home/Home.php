@@ -1,3 +1,4 @@
+
 <!-- // Notification
 echo '<script type="text/javascript">
 var notificationsEnabled = false;
@@ -76,8 +77,7 @@ function showNotification() {
             <p>Please enter your email address in the textbox.</p>
 
             <?php include 'Email.php' ?>
-
-            <button></button>
+            <!-- <button onclick="showNotification()">Show Notification</button> -->
         </div>
     </div>
 </body>
