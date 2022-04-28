@@ -20,6 +20,11 @@
         <input placeholder="Phone Number" name="message" size="50" required="required">
         <button id="sms">Add Phone Number</button>
     </form>
+
+    <form action="SMS-U.php" method="POST">
+        <input placeholder="Phone Number" name="message-u" size="50" required="required">
+        <button id="sms-u">Add Phone Number</button>
+    </form>
 </body>
 
 </html>

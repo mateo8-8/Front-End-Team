@@ -18,7 +18,7 @@
                 . mysqli_connect_error());
         }
 
-        $message = $_POST['message'];
+        $message = $_POST['message-u'];
         $sql = "DELETE FROM PHONE WHERE Phone='$message'";
 
         if (mysqli_query($con, $sql)) {
