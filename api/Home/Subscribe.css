@@ -1,4 +1,4 @@
-#grad {
+body {
     background-color: red;
     background-image: linear-gradient(yellow, red);
     font-family: Arial, Helvetica, sans-serif;
