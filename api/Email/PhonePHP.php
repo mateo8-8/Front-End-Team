@@ -34,6 +34,7 @@ try {
     
     while($row = mysqli_fetch_array($result)) {
         // $var = "@txt.att.net";
+        echo $row[0];
         $mail->addAddress( $row[0] .= "@txt.att.net", 'Personal User');
 
       
