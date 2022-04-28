@@ -12,6 +12,9 @@ $mail = new PHPMailer(true);
 
 $sql = "SELECT Phone FROM PHONE";
 $result = mysqli_query($con, $sql);
+$row2 = mysqli_fetch_array($result);
+
+echo $row2;
 
 
 
@@ -54,6 +57,6 @@ try {
     echo "Email message sent.";
 } catch (Exception $e) {
     echo "Error in sending email. Mailer Error: {$mail->ErrorInfo}";
-    echo $row[0];
+    
 }
 ?>
