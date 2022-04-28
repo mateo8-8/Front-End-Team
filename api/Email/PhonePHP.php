@@ -14,9 +14,9 @@ $sql = "SELECT Phone FROM PHONE";
 $result = mysqli_query($con, $sql);
 
 
-if (!$con){
-    require('../database.php');
-}
+
+    include('../database.php');
+
 try {
     // Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER; // for detailed debug output
