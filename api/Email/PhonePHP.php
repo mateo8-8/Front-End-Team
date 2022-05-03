@@ -15,6 +15,7 @@ $result = mysqli_query($con, $sql);
 
     include('../database.php');
 
+
 try {
     // Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER; // for detailed debug output
@@ -23,18 +24,22 @@ try {
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
+
     $mail->Username = 'sphost1a@gmail.com'; // YOUR gmail email
     $mail->Password = 'Checkout!'; // YOUR gmail password
 
     // Sender and recipient settings
     $mail->setFrom('sphost1a@gmail.com', '313 Wild Fire Detection');
-    $mail->addAddress("5409409289@tmomail.net", 'Personal User');
     
-    //while($row = mysqli_fetch_array($result)) {
-        
+    
+    while($row = mysqli_fetch_array($result)) {
+        $a = $row[0];
 
+        $b = $a . "@tmomail.net";
+        
+        $mail->addAddress($b, 'Personal User');
       
-    //}
+    }
 
 
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
