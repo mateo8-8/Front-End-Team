@@ -1,6 +1,9 @@
 <?php
 
-
+include('Exception.php');
+include('PHPMailer.php');
+include('SMTP.php');
+include('../database.php');
 // passing true in constructor enables exceptions in PHPMailer
 $mail = new PHPMailer(true);
 
