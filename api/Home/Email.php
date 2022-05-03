@@ -9,6 +9,7 @@
             display: inline-block;
             text-align: center;
             vertical-align: text-top;
+            margin: 10px
         }
     </style>
 </head>
