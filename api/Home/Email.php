@@ -9,6 +9,8 @@
             display: inline-block;
             text-align: center;
             vertical-align: text-top;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
