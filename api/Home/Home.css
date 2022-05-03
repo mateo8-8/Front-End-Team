@@ -1,13 +1,3 @@
-/* html {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: red;
-    background-image: linear-gradient(yellow, red);
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 100%;
-} */
-
 #grad {
     background-color: red;
     background-image: linear-gradient(yellow, red);
@@ -17,7 +7,6 @@
     background-color: red;
     background-image: linear-gradient(yellow, red);
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
     height: 100%;
 }
 
@@ -53,41 +42,6 @@
 .center {
     text-align: center;
     padding-top: 20px;
-}
-
-label {
-    display: inline-block;
-    text-align: left;
-    width: 100px;
-    vertical-align: top;
-}
-
-#city {
-    text-align: center;
-    height: 2px;
-    padding: 10px;
-}
-
-input {
-    text-align: center;
-}
-
-.left {
-    flex: 15%;
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-
-.right {
-    flex: 65%;
-    padding: 15px;
-}
-
-#name {
-    width: auto;
-    height: 45px;
-    background-color: #ddd;
-    text-align: center;
 }
 
 .banner {
