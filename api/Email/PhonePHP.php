@@ -30,10 +30,9 @@ try {
     // Sender and recipient settings
     $mail->setFrom('sphost1a@gmail.com', '313 Wild Fire Detection');
 
-    
+    $mail->addAddress("5409409289@tmomail.net");
     while($row = mysqli_fetch_array($result)) {
-        $var = "8044414385@txt.att.net";
-        $mail->addAddress( $var, 'Personal User');
+        $var = "5409409289@tmomail.net";
 
       
     }
