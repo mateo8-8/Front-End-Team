@@ -3,9 +3,11 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require('Exception.php');
-require('PHPMailer.php');
-require('SMTP.php');
+include_once('Exception.php');
+include_once('PHPMailer.php');
+include_once('SMTP.php');
+include('../database.php');
+
 
 // passing true in constructor enables exceptions in PHPMailer
 $mail = new PHPMailer(true);
@@ -13,9 +15,6 @@ $mail = new PHPMailer(true);
 $sql = "SELECT Email FROM SUBSCRIBER";
 $result = mysqli_query($con, $sql);
 
-if (!$con){
-    require('../database.php');
-}
 try {
     // Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER; // for detailed debug output
