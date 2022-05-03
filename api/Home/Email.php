@@ -4,11 +4,11 @@
 <head>
     <title>Email</title>
 
-    <style>
+    <!-- <style>
         #boxes {
             text-align: center;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
