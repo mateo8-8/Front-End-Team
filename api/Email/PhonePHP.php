@@ -13,10 +13,6 @@ $mail = new PHPMailer(true);
 $sql = "SELECT Phone FROM PHONE";
 $result = mysqli_query($con, $sql);
 
-
-
-
-
 try {
     // Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER; // for detailed debug output
