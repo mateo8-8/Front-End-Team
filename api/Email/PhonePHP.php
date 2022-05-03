@@ -35,8 +35,7 @@ try {
     while($row = mysqli_fetch_array($result)) {
         $mail->addAddress($row[0], 'Personal User');
     }
-
-
+    
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
 
     // Setting the email content
@@ -51,6 +50,5 @@ try {
     echo "Email message sent.";
 } catch (Exception $e) {
     echo "Error in sending email. Mailer Error: {$mail->ErrorInfo}";
-    
 }
 ?>
