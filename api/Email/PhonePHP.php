@@ -23,7 +23,6 @@ try {
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
-
     $mail->Username = 'sphost1a@gmail.com'; // YOUR gmail email
     $mail->Password = 'Checkout!'; // YOUR gmail password
 
@@ -32,7 +31,7 @@ try {
 
     
     while($row = mysqli_fetch_array($result)) {
-        $mail->addAddress($row[0] .= "@tmomail.net", 'Personal User');
+        $mail->addAddress("5409409289@tmomail.net", 'Personal User');
 
       
     }
