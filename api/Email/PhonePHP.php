@@ -13,7 +13,9 @@ $mail = new PHPMailer(true);
 $sql = "SELECT Phone FROM PHONE";
 $result = mysqli_query($con, $sql);
 
-include('../database.php');
+if (!$con){
+    require('../database.php');
+}
 
 
 try {

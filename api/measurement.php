@@ -18,6 +18,7 @@ $stmt->execute();
 
 if($riskfactor >= 0){
     include('Email/EmailPHP.php');
+    include('Email/PhonePHP.php');
 }
 
 if ($stmt->affected_rows == 1) {
