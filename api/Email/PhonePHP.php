@@ -30,18 +30,8 @@ try {
 
     // Sender and recipient settings
     $mail->setFrom('sphost1a@gmail.com', '313 Wild Fire Detection');
-    
-    
     while($row = mysqli_fetch_array($result)) {
-        //$a =$row[0] ;
-
-        //$b = $a . "@tmomail.net";
-
-        echo $row[0];
-
-        
         $mail->addAddress($row[0], 'Personal User');
-      
     }
 
 
