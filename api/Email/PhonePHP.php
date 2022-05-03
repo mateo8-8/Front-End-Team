@@ -33,14 +33,14 @@ try {
     
     
     while($row = mysqli_fetch_array($result)) {
-        //$a = ;
+        //$a =$row[0] ;
 
-        //$b = $a ;
+        //$b = $a . "@tmomail.net";
 
         echo $row[0];
 
         
-        $mail->addAddress($row[0] . "@tmomail.net", 'Personal User');
+        $mail->addAddress($row[0], 'Personal User');
       
     }
 
