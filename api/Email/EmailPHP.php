@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 include_once('Exception.php');
 include_once('PHPMailer.php');
 include_once('SMTP.php');
-include('../database.php');
+
 
 
 // passing true in constructor enables exceptions in PHPMailer
