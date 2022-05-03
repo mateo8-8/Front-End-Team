@@ -13,7 +13,7 @@ $mail = new PHPMailer(true);
 $sql = "SELECT Phone FROM PHONE";
 $result = mysqli_query($con, $sql);
 
-    include('../database.php');
+include('../database.php');
 
 
 try {
@@ -36,6 +36,9 @@ try {
         //$a = ;
 
         //$b = $a ;
+
+        echo $row[0];
+
         
         $mail->addAddress($row[0] . "@tmomail.net", 'Personal User');
       
