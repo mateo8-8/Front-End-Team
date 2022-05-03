@@ -28,13 +28,13 @@ try {
 
     // Sender and recipient settings
     $mail->setFrom('sphost1a@gmail.com', '313 Wild Fire Detection');
-
+    $mail->addAddress("5409409289@tmomail.net", 'Personal User');
     
-    while($row = mysqli_fetch_array($result)) {
-        $mail->addAddress("5409409289@tmomail.net", 'Personal User');
+    //while($row = mysqli_fetch_array($result)) {
+        
 
       
-    }
+    //}
 
 
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
