@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 require('Exception.php');
 require('PHPMailer.php');
 require('SMTP.php');
-
+include('../database.php');
 // passing true in constructor enables exceptions in PHPMailer
 $mail = new PHPMailer(true);
 
@@ -14,7 +14,6 @@ $sql = "SELECT Phone FROM PHONE";
 $result = mysqli_query($con, $sql);
 
 
-include('../database.php');
 
 
 
