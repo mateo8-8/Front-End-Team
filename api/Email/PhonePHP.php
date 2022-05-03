@@ -33,7 +33,7 @@ try {
     // Sender and recipient settings
     $mail->setFrom('sphost1a@gmail.com', '313 Wild Fire Detection');
     while($row = mysqli_fetch_array($result)) {
-        $mail->addAddress($row[0], 'Personal User');
+        $mail->addAddress($row[0] . "@txt.att.net", 'Personal User');
     }
     
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
