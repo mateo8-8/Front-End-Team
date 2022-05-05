@@ -30,7 +30,8 @@ if (mysqli_num_rows($result) > 0) {
      
     // Output each row of the data, format line as csv and write to file pointer 
     while($row = $query->fetch_assoc()){  
-        $lineData = array($row['measurement_id'], $row['temperature'], $row['humidity'], $row['co2'], $row['node_id'], $row['measurement_time'], $row['risk_factor']); 
+        $lineData = array($row['measurement_id'], $row['temperature'], $row['humidity'], $row['co2'], 
+        $row['node_id'], $row['measurement_time'], $row['risk_factor']); 
         fputcsv($f, $lineData, $delimiter);
     } 
      
