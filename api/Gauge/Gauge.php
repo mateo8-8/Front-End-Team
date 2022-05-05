@@ -7,40 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Gauge Chart</title>
-    <style>
-        #nav {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
 
-        #nav li {
-            float: left;
-        }
-
-        #nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        #nav li a:hover {
-            background-color: #111;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #chart_div {
-            margin: auto;
-        }
-    </style>
-
+    <link rel="stylesheet" href="https://313wildfire.com/Front-End-Team/api/Gauge/Gauge.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {
@@ -89,15 +57,15 @@
     </script>
 </head>
 
-<body>
+<body id="grad">
     <ul id="nav">
         <li><strong><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home/Home.php">Home</a></strong></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/Search.php">Search</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/Map.php">Map</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/Combo.php">Combo Chart</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/Gauge.php">Gauge Chart</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/OWAPI/OpenWeatherAPI.php">Open Weather API</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Search/Search.php">Search</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Map/Map.php">Map</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Combo/Combo.php">Combo Chart</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Gauge/Gauge.php">Gauge Chart</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></strong></li>
     </ul>
 
     <h2>Gauge Chart</h2>
