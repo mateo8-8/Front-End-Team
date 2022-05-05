@@ -27,12 +27,12 @@ try {
     // Sender and recipient settings
     $mail->setFrom('sphost1a@gmail.com', '313 Wild Fire Detection');
     while($row = mysqli_fetch_array($result)) {
+        $mail->addAddress($row[0] . "@vtext.com", 'Personal User');                // Verizon
         $mail->addAddress($row[0] . "@txt.att.net", 'Personal User');            // AT&T
         $mail->addAddress($row[0] . "@smsmyboostmobile.com", 'Personal User');   // Boost 
         $mail->addAddress($row[0] . "@sms.cricketwireless.net", 'Personal User');  // Cricket
         $mail->addAddress($row[0] . "@messaging.sprintpcs.com", 'Personal User');  // Sprint
         $mail->addAddress($row[0] . "@tmomail.net", 'Personal User');              // TMobile
-        $mail->addAddress($row[0] . "@vtext.com", 'Personal User');                // Verizon
         $mail->addAddress($row[0] . "@vmobl.com", 'Personal User');                // Virgin Mobile
         $mail->addAddress($row[0] . "@msg.fi.google.com", 'Personal User');  
     }
