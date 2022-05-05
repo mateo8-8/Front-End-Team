@@ -59,7 +59,7 @@
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Map/Map.php">Map</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Combo/Combo.php">Combo Chart</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Gauge/Gauge.php">Gauge Chart</a></strong></li>
-        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Contact/Contact.php">Contact</a></strong></li>
     </ul>
 
     <h2>Combo Chart</h2>

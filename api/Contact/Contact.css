@@ -1,0 +1,56 @@
+#grad {
+    background-color: red;
+    background-image: linear-gradient(yellow, red);
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+    background-image: linear-gradient(yellow, red);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EB0A0A;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background-color: white;
+}
+
+.row {
+    display: flex;
+}
+
+.right {
+    flex: 65%;
+    padding: 15px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+    vertical-align: top;
+}
+
+a {
+    text-align: center;
+}
