@@ -11,6 +11,13 @@
         #grad {
             background-color: red;
             background-image: linear-gradient(yellow, red);
+            font-family: Arial, Helvetica, sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: red;
+            background-image: linear-gradient(yellow, red);
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
         }
 
         #nav {
@@ -18,7 +25,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: #EB0A0A;
         }
 
         #nav li {
@@ -27,23 +34,14 @@
 
         #nav li a {
             display: block;
-            color: white;
+            color: black;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
 
         #nav li a:hover {
-            background-color: #111;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .right {
-            width: auto;
-            height: 450px;
+            background-color: white;
         }
 
         .center {
@@ -68,12 +66,6 @@
             text-align: center;
         }
 
-        .left {
-            flex: 15%;
-            padding-left: 20px;
-            padding-bottom: 20px;
-        }
-
         .right {
             flex: 65%;
             padding: 15px;
@@ -82,7 +74,6 @@
         #name {
             width: auto;
             height: 45px;
-            background-color: #ddd;
             text-align: center;
         }
     </style>
@@ -91,17 +82,17 @@
 <body id="grad">
     <ul id="nav">
         <li><strong><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home/Home.php">Home</a></strong></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/OpenWeatherAPI.php">Open Weather API</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/Search.php">Search</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/Map.php">Map</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/Combo.php">Combo Chart</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/Gauge.php">Gauge Chart</a></li>
-        <li><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/OWAPI/OpenWeatherAPI.php">Open Weather API</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Search.php">Search</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Map.php">Map</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Combo.php">Combo Chart</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Gauge.php">Gauge Chart</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></strong></li>
     </ul>
 
     <h2>Open Weather API</h2>
 
-    <div class="right" style="background-color:#ddd;">
+    <div class="right">
         <div class="center">
             <input type="text" placeholder="Enter The City" id="city">
             <button id="submit">Submit</button>
