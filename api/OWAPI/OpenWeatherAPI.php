@@ -7,76 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Open Weather API</title>
-    <style>
-        #grad {
-            background-color: red;
-            background-image: linear-gradient(yellow, red);
-            font-family: Arial, Helvetica, sans-serif;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: red;
-            background-image: linear-gradient(yellow, red);
-            font-family: Arial, Helvetica, sans-serif;
-            height: 100%;
-        }
 
-        #nav {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #EB0A0A;
-        }
-
-        #nav li {
-            float: left;
-        }
-
-        #nav li a {
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        #nav li a:hover {
-            background-color: white;
-        }
-
-        .center {
-            text-align: center;
-            padding-top: 20px;
-        }
-
-        label {
-            display: inline-block;
-            text-align: left;
-            width: 100px;
-            vertical-align: top;
-        }
-
-        #city {
-            text-align: center;
-            height: 2px;
-            padding: 10px;
-        }
-
-        input {
-            text-align: center;
-        }
-
-        .right {
-            flex: 65%;
-            padding: 15px;
-        }
-
-        #name {
-            width: auto;
-            height: 45px;
-            text-align: center;
-        }
-    </style>
+    <script src="https://313wildfire.com/Front-End-Team/api/OWAPI/OpenWeatherAPI.js"></script>
+    <link rel="stylesheet" href="https://313wildfire.com/Front-End-Team/api/OWAPI/OpenWeatherAPI.css">
 </head>
 
 <body id="grad">
@@ -121,25 +54,6 @@
             <input type="text" id="wind" name="wind">
         </div>
     </div>
-
-    <script>
-        document.getElementById("submit").addEventListener('click', function(name) {
-            fetch('https://api.openweathermap.org/data/2.5/weather?q=' + document.getElementById("city").value + '&appid=97f22a67241a67289efed587f6be89d3')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById("name").innerHTML = data['name']
-                    document.getElementById("longitude").value = data['coord']['lon']
-                    document.getElementById("latitude").value = data['coord']['lat']
-                    document.getElementById("temperature").value = data['main']['temp'] + " F"
-                    document.getElementById("humidity").value = data['main']['humidity'] + " %"
-                    document.getElementById("pressure").value = data['main']['pressure'] + " hPa"
-                    document.getElementById("weather").value = data['weather'][0]['description']
-                    document.getElementById("wind").value = data['wind']['speed'] + " m/s"
-                    document.getElementById("city").value = ""
-                })
-                .catch(err => alert("Wrong City Name! Try Again!"));
-        })
-    </script>
 </body>
 
 </html>
