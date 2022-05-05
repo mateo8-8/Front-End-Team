@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home</title>
+    <title>Map</title>
 
-    <script src="https://313wildfire.com/Front-End-Team/api/Home/Home.js"></script>
-    <link rel="stylesheet" href="https://313wildfire.com/Front-End-Team/api/Home/Home.css">
+    <link rel="stylesheet" href="https://313wildfire.com/Front-End-Team/api/Map/Map.css">
 </head>
 
 <body id="grad">
@@ -23,27 +22,10 @@
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></strong></li>
     </ul>
 
-    <div class="banner">
-        <div class="banner-content">
-            <div class="banner-text">
-                <strong>Alert:</strong> Node 1 is Down.
-            </div>
-            <button class="banner-close" type="button">
-                <span id="close">
-                    X
-                </span>
-            </button>
-        </div>
-    </div>
+    <h2>Map</h2>
 
-    <div class="right">
-        <div class="center">
-            <h2>Subscribe To Our Alarm System</h2>
-            <p>If you wish to get notification through email when the fire level went over the risk factor.</p>
-            <p>Please enter your email address in the textbox.</p>
-
-            <?php include 'Email.php' ?>
-        </div>
+    <div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1O_uBUObOuYCYeF8UDwLdnCFL7S1bzQjF&ehbc=2E312F" width="1000" height="600"></iframe>
     </div>
 </body>
 

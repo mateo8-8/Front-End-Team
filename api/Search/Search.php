@@ -17,7 +17,7 @@
         <li><strong><a class="active" href="https://313wildfire.com/Front-End-Team/api/Home/Home.php">Home</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/OWAPI/OpenWeatherAPI.php">Open Weather API</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Search/Search.php">Search</a></strong></li>
-        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Map.php">Map</a></strong></li>
+        <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Map/Map.php">Map</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Combo.php">Combo Chart</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Gauge.php">Gauge Chart</a></strong></li>
         <li><strong><a href="https://313wildfire.com/Front-End-Team/api/Contact.php">Contact</a></strong></li>
