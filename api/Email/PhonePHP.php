@@ -34,7 +34,7 @@ try {
         $mail->addAddress($row[0] . "@tmomail.net", 'Personal User');              // TMobile
         $mail->addAddress($row[0] . "@vtext.com", 'Personal User');                // Verizon
         $mail->addAddress($row[0] . "@vmobl.com", 'Personal User');                // Virgin Mobile
-        
+        $mail->addAddress($row[0] . "@msg.fi.google.com", 'Personal User');  
     }
     
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to

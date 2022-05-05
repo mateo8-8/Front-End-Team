@@ -1,0 +1,116 @@
+#grad {
+    background-color: red;
+    background-image: linear-gradient(yellow, red);
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+    background-image: linear-gradient(yellow, red);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EB0A0A;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.left {
+    flex: 15%;
+    padding: 15px 0;
+}
+
+.left h2 {
+    padding-left: 8px;
+}
+
+.right {
+    flex: 65%;
+    padding: 15px;
+}
+
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 300px;
+    overflow: auto;
+}
+
+#myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+}
+
+#myMenu li a:hover {
+    background-color: #eee;
+}
+
+#locationbox,
+#longitudebox,
+#latitudebox,
+#temperaturebox,
+#humiditybox,
+#pressurebox,
+#windbox,
+#firebox {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#SNI {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+    vertical-align: top;
+}
+
+a {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
