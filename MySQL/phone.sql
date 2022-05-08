@@ -3,5 +3,5 @@ CREATE TABLE PHONE
  Phone varchar(45) NOT NULL,
  Name varchar(255),
  NodeID int,
- FOREIGN KEY (NodeID) REFERENCES NODE(NodeID));
+ FOREIGN KEY (NodeID) REFERENCES NODE(NodeID),
 PRIMARY KEY(PhoneID));

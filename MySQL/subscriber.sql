@@ -3,5 +3,5 @@ CREATE TABLE SUBSCRIBER
  Email varchar(255) NOT NULL, 
  Name varchar(255),
  NodeID int,
- FOREIGN KEY (NodeID) REFERENCES NODE(NodeID));
+ FOREIGN KEY (NodeID) REFERENCES NODE(NodeID),
  PRIMARY KEY(SubscriberID));
