@@ -10,7 +10,11 @@ include_once('SMTP.php');
 $mail = new PHPMailer(true);
 
 $sql = "SELECT Phone FROM PHONE";
+// Added
+$sql1 = "SELECT Name FROM PHONE";
 $result = mysqli_query($con, $sql);
+// Added
+$result = mysqli_query($con, $sql1);
 
 try {
     // Server settings
@@ -41,7 +45,7 @@ try {
 
     // Setting the email content
     $mail->IsHTML(true);
-    $mail->Subject = 'Hello '. "There is a Warning! Fire Detected";
+    $mail->Subject = 'Hello '. $result1 . " There is a Warning! Fire Detected";
     $mail->Body = 'ATTENTION: 
     
     Wild fire risk detected!!';
