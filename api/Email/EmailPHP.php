@@ -15,11 +15,16 @@ $mail = new PHPMailer(true);
 $sql = "SELECT Email FROM SUBSCRIBER";
 $sqlLong = "SELECT LON FROM NODE";
 $sqlLat = "SELECT LAT FROM NODE";
+$helper = "SELECT * FROM MEASUREMENT";
 $result = mysqli_query($con, $sql);
 $resultLong = mysqli_query($con, $sqlLong);
 $resultLat = mysqli_query($con, $sqlLat);
+$resultHelp = mysqli_query($con, $helper);
 $arrayLong = array();
 $arrayLat = array();
+$arrayHelp = array();
+
+
 
 try {
     // Server settings
@@ -50,8 +55,15 @@ try {
     while($row = mysqli_fetch_array($resultLat)) {
         array_push($arrayLat, $row[0]);
     }
+    while($row = mysqli_fetch_array($resultHelp)) {
+        array_push($arrayHelp, $row[0]);
+    }
+
+    $length = sizeof($arrayHelp);
+
     $mail->Body = 'ATTENTION! Wild fire risk detected at Longitude: ' . $arrayLong[0] 
-    . ' Latitude: ' . $arrayLat[0];
+    . ' Latitude: ' . $arrayLat[0] . 'Tesing this: ' . $arrayHelp[$length];
+
 
 
     $mail->AltBody = 'Alert';
