@@ -41,13 +41,12 @@ try {
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
 
     // Setting the email content
-    $sql1 = "SELECT Name FROM PHONE";
     $mail->IsHTML(true);
     // $mail->Subject = " There is a Warning! Fire Detected";
     // $mail->Body = 'ATTENTION: 
     
     // Wild fire risk detected!!';
-    $mail->AltBody = 'Alert! ' . ' Hello '. $sql1 ." Fire Detected. Please be Safe.";
+    $mail->AltBody = 'Alert! ' . ' Hello '." Fire Detected. Please be Safe.";
 
     $mail->send();
     echo "Email message sent.";
