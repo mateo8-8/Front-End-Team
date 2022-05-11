@@ -10,7 +10,10 @@ include_once('SMTP.php');
 $mail = new PHPMailer(true);
 
 $sql = "SELECT Phone FROM PHONE";
+$sql1 = "SELECT fName FROM PHONE";
 $result = mysqli_query($con, $sql);
+$result1 = mysqli_query($con, $sql1);
+$array = array();
 
 
 try {
@@ -40,15 +43,16 @@ try {
     
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
 
-    // Setting the email content
-    $sql1 = "SELECT Name FROM PHONE";
 
     $mail->IsHTML(true);
     $mail->Subject = " There is a Warning! Fire Detected";
-    $mail->Body = 'ATTENTION: 
+    while($row = mysqli_fetch_array($result1)) {
+        array_push($array, $row[0]);
+    }
+    $mail->Body = 'ATTENTION: ' . $array[0] .
     
-    Wild fire risk detected!!';
-    $mail->AltBody = 'Alert! ' . 'Hello '. $sql1[0] ." Fire Detected. Please be Safe.";
+    ' Wild fire risk detected!!';
+    $mail->AltBody = 'Alert! ' . 'Hello '. $array[0] ." Fire Detected. Please be Safe.";
 
     $mail->send();
     echo "Email message sent.";
