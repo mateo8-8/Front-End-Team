@@ -12,8 +12,6 @@ $mail = new PHPMailer(true);
 $sql = "SELECT Phone FROM PHONE";
 $result = mysqli_query($con, $sql);
 
-$sql1 = "SELECT Name FROM PHONE";
-
 
 try {
     // Server settings
@@ -43,6 +41,7 @@ try {
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
 
     // Setting the email content
+    $sql1 = "SELECT Name FROM PHONE";
     $mail->IsHTML(true);
     // $mail->Subject = " There is a Warning! Fire Detected";
     // $mail->Body = 'ATTENTION: 
