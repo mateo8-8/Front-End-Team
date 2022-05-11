@@ -15,14 +15,20 @@ $mail = new PHPMailer(true);
 $sql = "SELECT Email FROM SUBSCRIBER";
 $sqlLong = "SELECT LON FROM NODE";
 $sqlLat = "SELECT LAT FROM NODE";
-$helper = "SELECT * FROM MEASUREMENT";
+$temp = "SELECT Temperature FROM MEASUREMENT";
+$humid = "SELECT Humidity FROM MEASUREMENT";
+$co2 = "SELECT CO2 FROM MEASUREMENT";
 $result = mysqli_query($con, $sql);
 $resultLong = mysqli_query($con, $sqlLong);
 $resultLat = mysqli_query($con, $sqlLat);
-$resultHelp = mysqli_query($con, $helper);
+$resultTemp = mysqli_query($con, $temp);
+$resultHumid = mysqli_query($con, $humid);
+$resultCO2 = mysqli_query($con, $co2);
 $arrayLong = array();
 $arrayLat = array();
-$arrayHelp = array();
+$arrayTemp = array();
+$arrayHumid = array();
+$arrayCO2 = array();
 
 
 
@@ -55,14 +61,21 @@ try {
     while($row = mysqli_fetch_array($resultLat)) {
         array_push($arrayLat, $row[0]);
     }
-    while($row = mysqli_fetch_array($resultHelp)) {
-        array_push($arrayHelp, $row[0]);
+    while($row = mysqli_fetch_array($resultTemp)) {
+        array_push($arrayTemp, $row[0]);
+    }
+    while($row = mysqli_fetch_array($resultHumid)) {
+        array_push($arrayHumid, $row[0]);
+    }
+    while($row = mysqli_fetch_array($resultCO2)) {
+        array_push($arrayCO2, $row[0]);
     }
 
     $length = sizeof($arrayHelp);
 
     $mail->Body = 'ATTENTION! Wild fire risk detected at Longitude: ' . $arrayLong[0] 
-    . ' Latitude: ' . $arrayLat[0] . 'Tesing this: ' . $arrayHelp[0];
+    . ' Latitude: ' . $arrayLat[0] . ' Here are the conditions: Temp(Celcius): ' . $arrayTemp[0] . 'Humidity: ' 
+    . $arrayHumid[0] . 'CO2: ' . $arrayCO2[0];
 
 
 
