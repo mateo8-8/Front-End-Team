@@ -49,7 +49,7 @@ try {
     while($row = mysqli_fetch_array($result1)) {
         array_push($array, $row[0]);
     }
-    $mail->Body = 'ATTENTION: ' . $array[0] .
+    $mail->Body = 'ATTENTION: ' . $array[1] .
     
     ' Wild fire risk detected!!';
     $mail->AltBody = 'Alert! ' . 'Hello '. $array[0] ." Fire Detected. Please be Safe.";
