@@ -14,7 +14,7 @@ $sql = "SELECT Phone FROM PHONE";
 $sql1 = "SELECT Name FROM PHONE";
 $result = mysqli_query($con, $sql);
 // Added
-$result = mysqli_query($con, $sql1);
+$result1 = mysqli_query($con, $sql1);
 
 try {
     // Server settings
