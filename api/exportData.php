@@ -7,9 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
-</body>
-</html>
 <?php
 
 require('database.php');
@@ -48,4 +45,6 @@ if (mysqli_num_rows($result) > 0) {
 exit;
 
 
-?>
+?>    
+</body>
+</html>
