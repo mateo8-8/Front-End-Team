@@ -48,10 +48,11 @@ try {
     $mail->Body = 'ATTENTION: 
     
     Wild fire risk detected!!';
-    $mail->AltBody = 'Alert' . 'Hello '. $sql1[0] ." Fire Detected. Please be Safe.";
+    $mail->AltBody = 'Alert! ' . 'Hello '. $sql1[0] ." Fire Detected. Please be Safe.";
 
     $mail->send();
     echo "Email message sent.";
+    echo $sql1;
 } catch (Exception $e) {
     echo "Error in sending email. Mailer Error: {$mail->ErrorInfo}";
 }
