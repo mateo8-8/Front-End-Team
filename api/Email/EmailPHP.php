@@ -43,16 +43,13 @@ try {
     // Setting the email content
     $mail->IsHTML(true);
     $mail->Subject = "Warning! Fire Detected";
-<<<<<<< HEAD
     while($row = mysqli_fetch_array($resultLong)) {
         array_push($array, $row[0]);
     }
     $mail->Body = 'ATTENTION: ' . $array[0] .
     'Wild fire risk detected!!';
-=======
-    $mail->Body = "Hello " . 'ATTENTION:
->>>>>>> c4405ef965718b2bf77b640359601647a857d759
-    
+
+
     $mail->AltBody = 'Alert';
 
     $mail->send();
