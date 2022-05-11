@@ -44,11 +44,11 @@ try {
     $sql1 = "SELECT Name FROM PHONE";
 
     $mail->IsHTML(true);
-    $mail->Subject = 'Hello '. $sql1[0] . " There is a Warning! Fire Detected";
+    $mail->Subject = " There is a Warning! Fire Detected";
     $mail->Body = 'ATTENTION: 
     
     Wild fire risk detected!!';
-    $mail->AltBody = 'Alert';
+    $mail->AltBody = 'Alert' . 'Hello '. $sql1[0] ." Fire Detected. Please be Safe.";
 
     $mail->send();
     echo "Email message sent.";
