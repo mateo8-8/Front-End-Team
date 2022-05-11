@@ -47,7 +47,7 @@ try {
     // $mail->Body = 'ATTENTION: 
     
     // Wild fire risk detected!!';
-    $mail->AltBody = 'Alert! ' . ' Hello '. $sql1[0] ." Fire Detected. Please be Safe.";
+    $mail->AltBody = 'Alert! ' . ' Hello '. $sql1 ." Fire Detected. Please be Safe.";
 
     $mail->send();
     echo "Email message sent.";
