@@ -41,6 +41,7 @@ try {
 
     // Setting the email content
     $name =  "SELECT Name";
+    $result1 = $conn -> query($name);
     $mail->IsHTML(true);
     $mail->Subject = 'Hello '. $name . "There is a Warning! Fire Detected";
     $mail->Body = 'ATTENTION: 
