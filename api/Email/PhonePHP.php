@@ -13,7 +13,6 @@ $sql = "SELECT Phone FROM PHONE";
 $result = mysqli_query($con, $sql);
 
 $sql1 = "SELECT Name FROM PHONE";
-$names = mysqli_query($con, $sql1);
 
 
 try {
@@ -49,7 +48,7 @@ try {
     // $mail->Body = 'ATTENTION: 
     
     // Wild fire risk detected!!';
-    $mail->AltBody = 'Alert! ' . ' Hello '. $names[0] ." Fire Detected. Please be Safe.";
+    $mail->AltBody = 'Alert! ' . ' Hello '. $sql1[0] ." Fire Detected. Please be Safe.";
 
     $mail->send();
     echo "Email message sent.";
