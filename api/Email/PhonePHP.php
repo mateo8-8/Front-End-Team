@@ -10,11 +10,8 @@ include_once('SMTP.php');
 $mail = new PHPMailer(true);
 
 $sql = "SELECT Phone FROM PHONE";
-// Added
-$sql1 = "SELECT Name FROM PHONE";
 $result = mysqli_query($con, $sql);
-// Added
-$result1 = mysqli_query($con, $sql1);
+
 
 try {
     // Server settings
@@ -44,8 +41,11 @@ try {
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
 
     // Setting the email content
+    $sql1 = "SELECT Name FROM PHONE";
+    $result1 = mysqli_query($con, $sql);
+    
     $mail->IsHTML(true);
-    $mail->Subject = 'Hello '. $result1 . " There is a Warning! Fire Detected";
+    $mail->Subject = 'Hello '. $result1[0] . " There is a Warning! Fire Detected";
     $mail->Body = 'ATTENTION: 
     
     Wild fire risk detected!!';
