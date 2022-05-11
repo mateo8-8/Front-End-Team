@@ -41,8 +41,8 @@ try {
 
     // Setting the email content
     $mail->IsHTML(true);
-    $mail->Subject = "Warning! Fire Detected";
-    $mail->Body = 'Hello'. 'ATTENTION: 
+    $mail->Subject = 'Hello'. $name[0] . "Warning! Fire Detected";
+    $mail->Body = 'ATTENTION: 
     
     Wild fire risk detected!!';
     $mail->AltBody = 'Alert';
