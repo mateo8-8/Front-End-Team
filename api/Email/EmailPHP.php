@@ -13,7 +13,12 @@ include_once('SMTP.php');
 $mail = new PHPMailer(true);
 
 $sql = "SELECT Email FROM SUBSCRIBER";
+$sqlLong = "SELECT LON FROM NODE";
+$sqlLat = "SELECT LAT FROM NODE";
 $result = mysqli_query($con, $sql);
+$resultLong = mysqli_query($con, $sqlLong);
+$resultLat = mysqli_query($con, $sqlLat);
+$array = array();
 
 try {
     // Server settings
@@ -38,9 +43,12 @@ try {
     // Setting the email content
     $mail->IsHTML(true);
     $mail->Subject = "Warning! Fire Detected";
-    $mail->Body = 'ATTENTION:
+    while($row = mysqli_fetch_array($resultLong)) {
+        array_push($array, $row[0]);
+    }
+    $mail->Body = 'ATTENTION: ' . $array[0] .
+    'Wild fire risk detected!!';
     
-    Wild fire risk detected!!';
     $mail->AltBody = 'Alert';
 
     $mail->send();
