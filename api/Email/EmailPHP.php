@@ -62,7 +62,7 @@ try {
     $length = sizeof($arrayHelp);
 
     $mail->Body = 'ATTENTION! Wild fire risk detected at Longitude: ' . $arrayLong[0] 
-    . ' Latitude: ' . $arrayLat[0] . 'Tesing this: ' . $arrayHelp[$length];
+    . ' Latitude: ' . $arrayLat[0] . 'Tesing this: ' . $arrayHelp[0];
 
 
 
