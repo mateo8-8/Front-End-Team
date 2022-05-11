@@ -42,10 +42,9 @@ try {
 
     // Setting the email content
     $sql1 = "SELECT Name FROM PHONE";
-    $result1 = mysqli_query($con, $sql);
-    
+
     $mail->IsHTML(true);
-    $mail->Subject = 'Hello '. $result1[0] . " There is a Warning! Fire Detected";
+    $mail->Subject = 'Hello '. $sql1[0] . " There is a Warning! Fire Detected";
     $mail->Body = 'ATTENTION: 
     
     Wild fire risk detected!!';
