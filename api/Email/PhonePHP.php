@@ -40,8 +40,9 @@ try {
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
 
     // Setting the email content
+    $name =  mysqli_fetch_array($result);
     $mail->IsHTML(true);
-    $mail->Subject = 'Hello '. $Name[0] . " Warning! Fire Detected";
+    $mail->Subject = 'Hello '. $name . " Warning! Fire Detected";
     $mail->Body = 'ATTENTION: 
     
     Wild fire risk detected!!';
