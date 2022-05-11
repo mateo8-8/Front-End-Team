@@ -52,7 +52,7 @@ try {
     $mail->Body = 'ATTENTION: ' . $array[1] .
     
     ' Wild fire risk detected!!';
-    $mail->AltBody = 'Alert! ' . 'Hello '. $array[0] ." Fire Detected. Please be Safe.";
+    $mail->AltBody = 'Alert! ' . 'Hello '. $array[1] ." Fire Detected. Please be Safe.";
 
     $mail->send();
     echo "Email message sent.";
