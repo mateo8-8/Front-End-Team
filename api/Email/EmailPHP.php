@@ -18,7 +18,8 @@ $sqlLat = "SELECT LAT FROM NODE";
 $result = mysqli_query($con, $sql);
 $resultLong = mysqli_query($con, $sqlLong);
 $resultLat = mysqli_query($con, $sqlLat);
-$array = array();
+$arrayLong = array();
+$arrayLat = array();
 
 try {
     // Server settings
@@ -44,10 +45,13 @@ try {
     $mail->IsHTML(true);
     $mail->Subject = "Warning! Fire Detected";
     while($row = mysqli_fetch_array($resultLong)) {
-        array_push($array, $row[0]);
+        array_push($arrayLong, $row[0]);
     }
-    $mail->Body = 'ATTENTION: ' . $array[0] .
-    'Wild fire risk detected!!';
+    while($row = mysqli_fetch_array($resultLat)) {
+        array_push($arrayLat, $row[0]);
+    }
+    $mail->Body = 'ATTENTION! Wild fire risk detected at Longitude: ' . $arrayLong[0] 
+    . ' Latitude: ' . $arrayLat[0];
 
 
     $mail->AltBody = 'Alert';
