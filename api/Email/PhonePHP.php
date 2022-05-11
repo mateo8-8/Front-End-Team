@@ -44,7 +44,7 @@ try {
     $sql1 = "SELECT Name FROM PHONE";
 
     $mail->IsHTML(true);
-    $mail->Subject = " There is a Warning! Fire Detected";
+    // $mail->Subject = " There is a Warning! Fire Detected";
     $mail->Body = 'ATTENTION: 
     
     Wild fire risk detected!!';
