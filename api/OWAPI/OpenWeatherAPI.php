@@ -24,8 +24,6 @@
 
     <h2>Open Weather API</h2>
 
-    <script src="https://313wildfire.com/Front-End-Team/api/OWAPI/OpenWeatherAPI.js"></script>
-
     <div class="right">
         <div class="center">
             <input type="text" placeholder="Enter The City" id="city">
@@ -55,6 +53,8 @@
             <input type="text" id="wind" name="wind">
         </div>
     </div>
+
+    <script src="https://313wildfire.com/Front-End-Team/api/OWAPI/OpenWeatherAPI.js"></script>
 </body>
 
 </html>
