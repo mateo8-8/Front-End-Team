@@ -8,7 +8,7 @@
 
     <title>Home</title>
 
-    <!-- <script src="https://313wildfire.com/Front-End-Team/api/Home/Home.js"></script> -->
+    <script src="https://313wildfire.com/Front-End-Team/api/Home/Home.js"></script>
     <link rel="stylesheet" href="https://313wildfire.com/Front-End-Team/api/Home/Home.css">
 </head>
 
@@ -45,11 +45,6 @@
             <?php include 'Email.php' ?>
         </div>
     </div>
-    <script>
-        document.querySelector("#close").addEventListener("click", function() {
-            this.closest(".banner").style.display = "none";
-        });
-    </script>
 </body>
 
 </html>
