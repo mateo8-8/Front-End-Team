@@ -76,8 +76,9 @@ try {
     $mail->Body = 'ATTENTION! Wild fire risk detected! To find out more information
     check your email! ';
 
-    $mail->AltBody = 'ATTENTION! Wild fire risk detected! To find out more information
-    check your email! ';
+    $mail->AltBody = 'ATTENTION! Wild fire risk detected at Longitude: ' . $arrayLong[0] 
+    . ' Latitude: ' . $arrayLat[0] . ' Here are the conditions: Temp(Celcius): ' . $arrayTemp[0] . ' Humidity: ' 
+    . $arrayHumid[0] . ' CO2: ' . $arrayCO2[0];
 
     $mail->send();
     echo "Email message sent.";
