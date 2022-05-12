@@ -76,7 +76,8 @@ try {
     $mail->Body = 'ATTENTION! Wild fire risk detected! To find out more information
     check your email! ';
 
-    $mail->AltBody = 'Alert';
+    $mail->AltBody = 'ATTENTION! Wild fire risk detected! To find out more information
+    check your email! ';
 
     $mail->send();
     echo "Email message sent.";
