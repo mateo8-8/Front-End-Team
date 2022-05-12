@@ -10,10 +10,22 @@ include_once('SMTP.php');
 $mail = new PHPMailer(true);
 
 $sql = "SELECT Phone FROM PHONE";
-$sql1 = "SELECT fName FROM PHONE";
+$sqlLong = "SELECT LON FROM NODE";
+$sqlLat = "SELECT LAT FROM NODE";
+$temp = "SELECT Temperature FROM MEASUREMENT";
+$humid = "SELECT Humidity FROM MEASUREMENT";
+$co2 = "SELECT CO2 FROM MEASUREMENT";
 $result = mysqli_query($con, $sql);
-$result1 = mysqli_query($con, $sql1);
-$array = array();
+$resultLong = mysqli_query($con, $sqlLong);
+$resultLat = mysqli_query($con, $sqlLat);
+$resultTemp = mysqli_query($con, $temp);
+$resultHumid = mysqli_query($con, $humid);
+$resultCO2 = mysqli_query($con, $co2);
+$arrayLong = array();
+$arrayLat = array();
+$arrayTemp = array();
+$arrayHumid = array();
+$arrayCO2 = array();
 
 
 try {
@@ -46,17 +58,28 @@ try {
 
     $mail->IsHTML(true);
     $mail->Subject = " There is a Warning! Fire Detected";
-    while($row = mysqli_fetch_array($result1)) {
-        array_push($array, $row[0]);
+    while($row = mysqli_fetch_array($resultLong)) {
+        array_push($arrayLong, $row[0]);
     }
-    $mail->Body = 'ATTENTION: ' . $array[1] .
-    
-    ' Wild fire risk detected!!';
-    $mail->AltBody = 'Alert! ' . 'Hello '. $array[1] ." Fire Detected. Please be Safe.";
+    while($row = mysqli_fetch_array($resultLat)) {
+        array_push($arrayLat, $row[0]);
+    }
+    while($row = mysqli_fetch_array($resultTemp)) {
+        array_push($arrayTemp, $row[0]);
+    }
+    while($row = mysqli_fetch_array($resultHumid)) {
+        array_push($arrayHumid, $row[0]);
+    }
+    while($row = mysqli_fetch_array($resultCO2)) {
+        array_push($arrayCO2, $row[0]);
+    }
+    $mail->Body = 'ATTENTION! Wild fire risk detected at Longitude: ' . $arrayLong[0] 
+    . ' Latitude: ' . $arrayLat[0] . ' Here are the conditions: Temp(Celcius): ' . $arrayTemp[0] . ' Humidity: ' 
+    . $arrayHumid[0] . ' CO2: ' . $arrayCO2[0];
+    $mail->AltBody = 'Alert';
 
     $mail->send();
     echo "Email message sent.";
-    echo $sql1;
 } catch (Exception $e) {
     echo "Error in sending email. Mailer Error: {$mail->ErrorInfo}";
 }

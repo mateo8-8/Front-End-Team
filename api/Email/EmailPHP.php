@@ -74,7 +74,7 @@ try {
     $length = sizeof($arrayHelp);
 
     $mail->Body = 'ATTENTION! Wild fire risk detected at Longitude: ' . $arrayLong[0] 
-    . ' Latitude: ' . $arrayLat[0] . ' Here are the conditions: Temp(Celcius): \n' . $arrayTemp[0] . ' Humidity: ' 
+    . ' Latitude: ' . $arrayLat[0] . ' Here are the conditions: Temp(Celcius): ' . $arrayTemp[0] . ' Humidity: ' 
     . $arrayHumid[0] . ' CO2: ' . $arrayCO2[0];
 
 
