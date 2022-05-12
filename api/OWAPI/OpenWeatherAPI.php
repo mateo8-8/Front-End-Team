@@ -8,7 +8,6 @@
 
     <title>Open Weather API</title>
 
-    <script src="https://313wildfire.com/Front-End-Team/api/OWAPI/OpenWeatherAPI.js"></script>
     <link rel="stylesheet" href="https://313wildfire.com/Front-End-Team/api/OWAPI/OpenWeatherAPI.css">
 </head>
 
@@ -24,6 +23,8 @@
     </ul>
 
     <h2>Open Weather API</h2>
+
+    <script src="https://313wildfire.com/Front-End-Team/api/OWAPI/OpenWeatherAPI.js"></script>
 
     <div class="right">
         <div class="center">
