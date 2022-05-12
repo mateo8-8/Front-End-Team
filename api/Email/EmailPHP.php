@@ -7,8 +7,6 @@ include_once('Exception.php');
 include_once('PHPMailer.php');
 include_once('SMTP.php');
 
-
-
 // passing true in constructor enables exceptions in PHPMailer
 $mail = new PHPMailer(true);
 
