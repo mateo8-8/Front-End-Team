@@ -51,7 +51,7 @@ try {
     }
     
     $mail->addReplyTo('sphost1a@gmail.com', 'Admin'); // to set the reply to
-
+   
     // Setting the email content
     $mail->IsHTML(true);
     $mail->Subject = "Warning! Fire Detected";
@@ -70,14 +70,9 @@ try {
     while($row = mysqli_fetch_array($resultCO2)) {
         array_push($arrayCO2, $row[0]);
     }
-
-    $length = sizeof($arrayHelp);
-
     $mail->Body = 'ATTENTION! Wild fire risk detected at Longitude: ' . $arrayLong[0] 
     . ' Latitude: ' . $arrayLat[0] . ' Here are the conditions: Temp(Celcius): ' . $arrayTemp[0] . ' Humidity: ' 
     . $arrayHumid[0] . ' CO2: ' . $arrayCO2[0];
-
-
 
     $mail->AltBody = 'Alert';
 
