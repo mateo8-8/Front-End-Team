@@ -45,7 +45,11 @@
             <?php include 'Email.php' ?>
         </div>
     </div>
-    <script src="https://313wildfire.com/Front-End-Team/api/Home/Home.js"></script>
+    <script>
+        document.getElementById("close").addEventListener("click", function() {
+            this.closest(".banner").style.display = "none";
+        });
+    </script>
 </body>
 
 </html>
